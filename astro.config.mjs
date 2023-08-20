@@ -5,10 +5,12 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://aoijs.github.io",
+  base: "/website-astro",
   integrations: [
     starlight({
       title: "aoi.js",
-      favicon: './public/favicon.png',
+      favicon: "./public/favicon.png",
       logo: {
         src: "./public/favicon.png",
       },
