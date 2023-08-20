@@ -10,9 +10,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "aoi.js",
-      favicon: "./public/favicon.png",
+      favicon: "/favicon.png",
       logo: {
-        src: "./public/favicon.png",
+        src: "/favicon.png",
       },
       social: {
         github: "https://github.com/aoijs/website-astro",
