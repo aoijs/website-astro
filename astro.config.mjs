@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import starlight from "starlight-custom";
+import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
