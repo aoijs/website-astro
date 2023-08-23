@@ -1,5 +1,6 @@
 /* Dark mode colors. */
 :root {
+  --sl-font: "IBM Plex Serif", serif;
   --sl-color-accent-low: #00273d;
   --sl-color-accent: #0071a7;
   --sl-color-accent-high: #92d1fe;
@@ -33,8 +34,17 @@
   border-radius: 5px;
 }
 
+code {
+  border-radius: 4px;
+}
+
+.astro-code {
+  border-radius: 7px;
+}
+
+/* Theme Component */
 .astro-4YPHTOEN {
-  border-radius: 6px; /* Adjust the value as needed */
+  border-radius: 6px;
   transition: border-color 0.3s;
   border-bottom: 1px solid transparent;
 }

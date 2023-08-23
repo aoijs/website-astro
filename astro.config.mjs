@@ -19,10 +19,12 @@ export default defineConfig({
         discord: "https://discord.com/invite/HMUfMXDQsV",
       },
       editLink: {
-        baseUrl: "https://github.com/aoijs/website-astro/edit/main/docs/",
+        baseUrl: "https://github.com/aoijs/website-astro/edit/main/",
       },
       customCss: [
         "./src/styles/custom.css",
+        "@fontsource/ibm-plex-serif/400.css",
+        "@fontsource/ibm-plex-serif/600.css",
       ],
       sidebar: [
         {

@@ -14,6 +14,7 @@
     "@astrojs/starlight": "^0.7.2",
     "@astrojs/starlight-tailwind": "^1.0.1",
     "@astrojs/tailwind": "^4.0.0",
+    "@fontsource/ibm-plex-serif": "^5.0.8",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "astro": "^2.10.5",
