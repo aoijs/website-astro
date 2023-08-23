@@ -21,6 +21,9 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/aoijs/website-astro/edit/main/docs/",
       },
+      customCss: [
+        "./src/styles/custom.css",
+      ],
       sidebar: [
         {
           label: "Introduction",
@@ -52,7 +55,6 @@ export default defineConfig({
             },
           ],
         },
-        // A group linking to all pages in the reference directory.
         {
           label: "Functions",
           items: [
@@ -155,7 +157,7 @@ export default defineConfig({
               collapsed: true,
             },
           ],
-          collapsed: true,
+          collapsed: false,
         },
       ],
     }),
