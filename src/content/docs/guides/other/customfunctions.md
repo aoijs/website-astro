@@ -8,7 +8,7 @@ id: customfunctions
 
 ## Basics / How to create custom functions
 
-:::info
+:::tip
 Please note that this is most likely only useful for advanced aoi.js users.
 :::
 
