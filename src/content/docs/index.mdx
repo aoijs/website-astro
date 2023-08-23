@@ -15,3 +15,18 @@ hero:
       link: https://discord.com/invite/HMUfMXDQsV
       icon: external
 ---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid stagger>
+  <Card title="Easy-to-use" icon="rocket" style="border-radius: 5px;">
+    While keeping things simple, aoi.js also allows you to customize and extend
+    its capabilities. You can create your own commands and events tailored to
+    your project's requirements.
+  </Card>
+  <Card title="Community" icon="puzzle" style="border-radius: 5px;">
+    The package comes with comprehensive documentation that's helpful for both
+    beginners and experienced developers. Plus, there's likely a community of
+    users who can assist if you run into any issues.
+  </Card>
+</CardGrid>
