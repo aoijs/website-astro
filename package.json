@@ -10,14 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^5.3.6",
     "@astrojs/react": "^2.3.2",
     "@astrojs/starlight": "^0.7.2",
     "@astrojs/starlight-tailwind": "^1.0.1",
     "@astrojs/tailwind": "^4.0.0",
+    "@auth/core": "^0.5.1",
     "@fontsource/ibm-plex-serif": "^5.0.8",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "astro": "^2.10.5",
+    "auth-astro": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.32.3",
