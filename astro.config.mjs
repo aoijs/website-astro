@@ -7,6 +7,15 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://aoijs.github.io",
   base: "/website-astro",
+  head: [
+    {
+      tag: "script",
+      attrs: {
+        src: "/toc.js",
+        defer: true,
+      },
+    },
+  ],
   integrations: [
     starlight({
       title: "aoi.js",
