@@ -2,11 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
-import auth from 'auth-astro';
 
-import node from "@astrojs/node";
-
-// https://astro.build/config
 export default defineConfig({
   site: "https://aoijs.github.io",
   base: "/website-astro",
@@ -24,7 +20,7 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/aoijs/website-astro/edit/main/"
       },
-      customCss: ["./src/styles/custom.css", "@fontsource/ibm-plex-serif/400.css", "@fontsource/ibm-plex-serif/600.css"],
+      customCss: ["./src/styles/custom.css"],
       head: [{
         tag: "script",
         attrs: {
