@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Chat
+    url: https://aoi.js.org/invite
+    about: Join our discord server to chat with us!
+  - name: Support
+    url: https://aoi.js.org/invite
+    about: "Issues should not be used for support! To get aoi.js related support join our Discord."
