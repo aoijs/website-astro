@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://aoijs.github.io",
@@ -141,7 +140,7 @@ export default defineConfig({
         }],
         collapsed: false
       }]
-    }), react(), tailwind()],
+    }), react()],
   image: {
     service: {
       entrypoint: "astro/assets/services/sharp"
