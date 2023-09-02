@@ -42,7 +42,7 @@ code {
 
 .header:where(.astro-2GH5JEOH) {
   border-bottom: 1px solid transparent;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
   background-color: transparent;
 }
 
@@ -63,4 +63,17 @@ code {
 
 .astro-4YPHTOEN:hover {
   border-bottom: 1px solid #c7d2fe;
+}
+
+/* Copy button for ALL codeblocks (important) */
+.copy-code {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(25%);
+  background-color: transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  user-select: none;
+  transition: all 0.3 ease-in;
 }
