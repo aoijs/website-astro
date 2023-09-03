@@ -31,10 +31,10 @@ $createApplicationCommand[global;exampleslash;Simple example slash command.;true
 
 ```javascript
 bot.command({
-    name: 'exampleslash',
-    type: 'interaction',
-    prototype: 'slash',
-    code: `
-    $interactionReply[What a great example! You entered $slashOption[exampleOption]!]`
+  name: "exampleslash",
+  type: "interaction",
+  prototype: "slash",
+  code: `
+    $interactionReply[What a great example! You entered $slashOption[exampleOption]!]`,
 });
 ```

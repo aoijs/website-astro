@@ -24,9 +24,9 @@ This will return `true` your guild exists:
 
 ```javascript
 bot.command({
-    name: 'guildExists',
-    code: `
+  name: "guildExists",
+  code: `
   $guildExists[$guildID]
-  `
+  `,
 });
 ```

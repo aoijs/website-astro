@@ -30,13 +30,13 @@ bot.command({
   name: "awaitData",
   code: `
   $forEachUser[1;{};returnUsers;]
-  `
+  `,
 });
 
 bot.awaitedCommand({
   name: "returnUsers",
   code: `
   $log[ $authorID ]
-  `
+  `,
 });
 ```

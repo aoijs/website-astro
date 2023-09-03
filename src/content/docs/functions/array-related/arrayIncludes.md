@@ -23,22 +23,22 @@ $arrayIncludes[name;query]
 
 ```javascript
 bot.command({
-    name: "array-includes",
-    code: `
+  name: "array-includes",
+  code: `
   $arrayIncludes[array;Leref]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
-    // It will return "false" as it doesn't contain the word "Leref".
+  `,
+  // It will return "false" as it doesn't contain the word "Leref".
 });
 ```
 
 ```javascript
 bot.command({
-    name: "array-includes",
-    code: `
+  name: "array-includes",
+  code: `
   $arrayIncludes[array;akarui]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
-    // It will return "true" as it contains the word "akarui".
+  `,
+  // It will return "true" as it contains the word "akarui".
 });
 ```

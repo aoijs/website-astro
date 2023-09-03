@@ -38,9 +38,9 @@ This will return the content of your sent message:
 
 ```javascript
 bot.command({
-    name: 'getMessage',
-    code: `
+  name: "getMessage",
+  code: `
 $getMessage[$channelID;$messageID;content]
-  `
+  `,
 });
 ```

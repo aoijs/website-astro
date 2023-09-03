@@ -26,12 +26,12 @@ $interactionEdit[content?;embeds?;components?;files?;allowedMentions?]
 
 ```javascript
 bot.interactionCommand({
-    name: "interactionEdit",
-    prototype: "slash",
-    code: `
+  name: "interactionEdit",
+  prototype: "slash",
+  code: `
   $interactionEdit[Bye, World!;;;;everyone]
   $wait[5s]
   $interactionReply[Hello, World!;;;;everyone;false]
-  `
+  `,
 });
 ```

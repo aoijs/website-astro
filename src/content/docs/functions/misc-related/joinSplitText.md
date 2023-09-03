@@ -24,10 +24,10 @@ This will join all text split elements with a comma:
 
 ```javascript
 bot.command({
-    name: "joinSplitText",
-    code: `
+  name: "joinSplitText",
+  code: `
     $joinSplitText[, ]
     $textSplit[Hello:Bye:Leref;:]
-    `
+    `,
 });
 ```

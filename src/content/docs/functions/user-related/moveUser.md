@@ -27,9 +27,9 @@ This will move a user to another Voice Channel:
 
 ```javascript
 bot.command({
-    name: 'moveUser',
-    code: `
+  name: "moveUser",
+  code: `
   $moveUser[$guildID;userID;new voice channel ID;Testing!]
-  `
+  `,
 });
 ```

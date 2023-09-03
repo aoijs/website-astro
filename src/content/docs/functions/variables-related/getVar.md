@@ -16,7 +16,7 @@ $getVar[varname;table?]
 
 | Field   | Type   | Description     | Required |
 | ------- | ------ | --------------- | :------: |
-| varname | string | Variable name.  |  true    |
+| varname | string | Variable name.  |   true   |
 | table?  | string | Variable table. |  false   |
 
 ## Example(s)
@@ -25,9 +25,9 @@ This will return the value of a variable called "Example":
 
 ```javascript
 bot.command({
-    name: "getVar",
-    code: `
+  name: "getVar",
+  code: `
     $getVar[Example;main]
-    `
+    `,
 });
 ```

@@ -25,9 +25,9 @@ not:
 
 ```javascript
 bot.command({
-    name: 'channelNSFW',
-    code: `
+  name: "channelNSFW",
+  code: `
   $channelNSFW[$channelID]
-  `
+  `,
 });
 ```

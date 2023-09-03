@@ -25,9 +25,9 @@ This will return the role position of any role you might like, for this example,
 
 ```javascript
 bot.command({
-    name: 'rolePosition',
-    code: `
+  name: "rolePosition",
+  code: `
   $rolePosition[$guildID]
-  `
+  `,
 });
 ```

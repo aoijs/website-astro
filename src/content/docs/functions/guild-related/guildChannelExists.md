@@ -25,9 +25,9 @@ This will check if a guild channel with the name `rules` exists, alternatively y
 
 ```javascript
 bot.command({
-    name: 'guildChannelExists',
-    code: `
+  name: "guildChannelExists",
+  code: `
   $guildChannelExists[$guildID;rules]
-  `
+  `,
 });
 ```

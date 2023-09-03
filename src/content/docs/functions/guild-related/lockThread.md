@@ -26,9 +26,9 @@ This will lock a given thread:
 
 ```javascript
 bot.command({
-    name: 'lockThread',
-    code: `
+  name: "lockThread",
+  code: `
   $lockThread[$channelID;threadID;Example reason!]
-  `
+  `,
 });
 ```

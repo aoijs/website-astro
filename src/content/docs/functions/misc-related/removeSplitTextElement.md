@@ -24,10 +24,10 @@ This will remove the word "bye" from the array:
 
 ```javascript
 bot.command({
-    name: "removeSplitTextElement",
-    code: `
+  name: "removeSplitTextElement",
+  code: `
     $removeSplitTextElement[bye]
     $textSplit[hello, bye, aoi.js;, ]
-    `
+    `,
 });
 ```

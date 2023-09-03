@@ -26,11 +26,11 @@ This will add two emojis and remove one completely:
 
 ```javascript
 bot.command({
-    name: 'clearReactions',
-    code: `
+  name: "clearReactions",
+  code: `
   $clearReactions[$channelID;$messageID;🥱]
   $wait[2s]
   $addCmdReactions[🥱;😩]
-  `
+  `,
 });
 ```

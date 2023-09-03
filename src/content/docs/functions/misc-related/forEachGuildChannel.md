@@ -27,16 +27,16 @@ This will change the variable value of each guild channel to "test":
 
 ```javascript
 bot.command({
-    name: "forEachGuildChannel",
-    code: `
+  name: "forEachGuildChannel",
+  code: `
   $forEachGuildChannel[2s;{"value": "test"};awaitedCommand;]
-  `
+  `,
 });
 
 bot.awaitedCommand({
-    name: "awaitedCommand",
-    code: `
+  name: "awaitedCommand",
+  code: `
   $setChannelVar[varname;$awaitData[value];$channelID]
-  `
+  `,
 });
 ```

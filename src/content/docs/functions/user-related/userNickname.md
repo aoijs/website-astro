@@ -26,9 +26,9 @@ This will return your nickname, if you have none then it'll return your Discord 
 
 ```javascript
 bot.command({
-    name: 'userNickname',
-    code: `
+  name: "userNickname",
+  code: `
   $userNickname[$guildID;$authorID;true]
-  `
+  `,
 });
 ```

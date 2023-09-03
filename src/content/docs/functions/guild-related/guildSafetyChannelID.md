@@ -24,9 +24,9 @@ This will return the safety channel ID of the current guild (if any):
 
 ```javascript
 bot.command({
-    name: 'guildSafetyChannelID',
-    code: `
+  name: "guildSafetyChannelID",
+  code: `
   $guildSafetyChannelID[$guildID]
-  `
+  `,
 });
 ```

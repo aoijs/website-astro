@@ -24,9 +24,9 @@ This will end a `$setTimeout` timeout:
 
 ```javascript
 bot.command({
-    name: "stopTimeout",
-    code: `
+  name: "stopTimeout",
+  code: `
     $stopTimeout[10029]
-    `
+    `,
 });
 ```

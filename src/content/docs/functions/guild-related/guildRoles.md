@@ -26,9 +26,9 @@ This will return all roles of your guild:
 
 ```javascript
 bot.command({
-    name: 'guildRoles',
-    code: `
+  name: "guildRoles",
+  code: `
   $description[$guildRoles[$guildID;name;, ]]
-  `
+  `,
 });
 ```

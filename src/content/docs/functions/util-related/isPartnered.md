@@ -24,9 +24,9 @@ This will check if your server is partnered and return either `true` or `false`:
 
 ```javascript
 bot.command({
-    name: 'isPartnered',
-    code: `
+  name: "isPartnered",
+  code: `
   $isPartnered[$guildID]
-  `
+  `,
 });
 ```

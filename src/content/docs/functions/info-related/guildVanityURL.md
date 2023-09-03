@@ -24,9 +24,9 @@ This will return the vanity URL of your guild, if you have one:
 
 ```javascript
 bot.command({
-    name: 'guildVanityURL',
-    code: `
+  name: "guildVanityURL",
+  code: `
   $guildVanityURL[$guildID]
-  `
+  `,
 });
 ```

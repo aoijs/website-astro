@@ -25,20 +25,20 @@ $interactionUpdate[content?;embeds?;components?;files?]
 
 ```javascript
 bot.interactionCommand({
-    name: "interactionUpdate",
-    prototype: "slash",
-    code: `
+  name: "interactionUpdate",
+  prototype: "slash",
+  code: `
   $interactionReply[Hello, World!;;{actionRow:{button:Example Button!:primary:customID:false}};;everyone;false]
-  `
+  `,
 });
 ```
 
 ```js
 bot.interactionCommand({
-    name: "customID",
-    prototype: "button",
-    code: `
+  name: "customID",
+  prototype: "button",
+  code: `
   $interactionUpdate[Bye, world.]
-  `
+  `,
 });
 ```

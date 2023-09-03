@@ -24,10 +24,10 @@ This will return the object created in `$createObject`:
 
 ```javascript
 bot.command({
-    name: "getObject",
-    code: `
+  name: "getObject",
+  code: `
     $getObject[true]
     $createObject[{"hello": "bye"}]
-    `
+    `,
 });
 ```

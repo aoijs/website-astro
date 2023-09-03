@@ -24,11 +24,11 @@ $findMembers[userResolver;limit?;type?;force?;format?]
 
 ### Parameters for the `format` argument
 
-* {position} -> returns the position
-* {id} -> returns the user ID
-* {username} -> returns the username
-* {nick} -> returns the nickname
-* {tag} -> returns the user discriminator
+- {position} -> returns the position
+- {id} -> returns the user ID
+- {username} -> returns the username
+- {nick} -> returns the nickname
+- {tag} -> returns the user discriminator
 
 ## Example(s)
 
@@ -36,9 +36,9 @@ This will return twenty members with `Leref` in their username:
 
 ```javascript
 bot.command({
-    name: 'findMembers',
-    code: `
+  name: "findMembers",
+  code: `
   $findMembers[Leref;20;startsWith;true;{position}) {username}#{tag}]
-  `
+  `,
 });
 ```

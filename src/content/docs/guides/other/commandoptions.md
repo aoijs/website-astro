@@ -18,13 +18,13 @@ module.exports = [{
 }]
 ```
 
-| OPTION        | INPUT   | EXPLANATION                                                                                      |
-| ------------- | ------- | ------------------------------------------------------------------------------------------------ |
-| `name`        | string  | Command Name.                                                                                    |
-| `aliases`     | string  | Aliases, work the same way as `name`.                                                            |
-| `nonPrefixed` | boolean | Set your command as non prefixed, meaning it can be executed without the actual prefix.          |
+| OPTION        | INPUT   | EXPLANATION                                                                                                            |
+| ------------- | ------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `name`        | string  | Command Name.                                                                                                          |
+| `aliases`     | string  | Aliases, work the same way as `name`.                                                                                  |
+| `nonPrefixed` | boolean | Set your command as non prefixed, meaning it can be executed without the actual prefix.                                |
 | `executeAt`   | string  | Define where it may can get executed in. <br /> 1. **guild** <br /> 2. **dm** <br /> 3. **groupDM** <br /> 4. **both** |
-| `code`        | string  | Your command code.                                                                               |
+| `code`        | string  | Your command code.                                                                                                     |
 
 ### Event Commands
 
@@ -47,12 +47,14 @@ module.exports = [{
 ### Interaction Commands
 
 ```js
-module.exports = [{
+module.exports = [
+  {
     name: string,
     type: string,
     prototype: string,
     code: string,
-}]
+  },
+];
 ```
 
 | OPTION      | INPUT  | EXPLANATION                                                                                                                          |

@@ -36,9 +36,9 @@ This will return `users` as you're an user:
 
 ```javascript
 bot.command({
-    name: 'mentionType',
-    code: `
+  name: "mentionType",
+  code: `
   $mentionType[<@$authorID>]
-  `
+  `,
 });
 ```

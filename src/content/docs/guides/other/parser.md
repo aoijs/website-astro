@@ -24,7 +24,7 @@ require `{newEmbed:{...}}` every time you want to use embed parsers.
 {authorURL:URL}
 {field:title:value:inline? (true / false)}
 {timestamp:ms?}
-``` 
+```
 
 ---
 

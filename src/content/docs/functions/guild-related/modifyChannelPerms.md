@@ -26,7 +26,7 @@ $modifyChannelPerms[channelID;roruID;...perms]
 | `+` | Allow a specific permission to someone or something. |
 | `/` | Reset a specific permission to its default state.    |
 
-You can find all permissions __[here](../../guides/client/2permissions.md)__.
+You can find all permissions **[here](../../guides/client/2permissions.md)**.
 
 ## Example(s)
 
@@ -34,9 +34,9 @@ This will allow `@everyone` to send messages and add reactions in the current ch
 
 ```javascript
 bot.command({
-    name: 'modifyChannelPerms',
-    code: `
+  name: "modifyChannelPerms",
+  code: `
   $modifyChannelPerms[$channelID;$guildID;+sendmessages;+addreactions]
-  `
+  `,
 });
 ```

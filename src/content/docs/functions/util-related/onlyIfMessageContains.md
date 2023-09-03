@@ -26,10 +26,10 @@ This will return the error message as "aoi.js" does not appear in "Hello!":
 
 ```javascript
 bot.command({
-    name: "onlyIfMessageContains",
-    code: `
+  name: "onlyIfMessageContains",
+  code: `
     Ok.
     $onlyIfMessageContains[Hello!;aoi.js;Couldn't find that word!]
-    `
+    `,
 });
 ```

@@ -24,12 +24,12 @@ Example usage of `$if: old` (will return "Hello" when the condition is true):
 
 ```javascript
 bot.command({
-    name: "endif",
-    $if: "old",
-    code: `
+  name: "endif",
+  $if: "old",
+  code: `
   $if[1==1]
   Hello!
   $endif
-  `
+  `,
 });
 ```

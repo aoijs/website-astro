@@ -18,10 +18,10 @@ This will return the invite Channel ID of the created invite:
 
 ```javascript
 bot.inviteCreateCommand({
-    name: 'inviteChannelID',
-    channel: '$channelID',
-    code: `
+  name: "inviteChannelID",
+  channel: "$channelID",
+  code: `
   $inviteChannelID
-  `
+  `,
 });
 ```

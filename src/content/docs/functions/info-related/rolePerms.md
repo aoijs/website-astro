@@ -26,9 +26,9 @@ This will return the permissions for the `@everyone` role:
 
 ```javascript
 bot.command({
-    name: 'rolePerms',
-    code: `
+  name: "rolePerms",
+  code: `
   $rolePerms[$guildID;, ;$guildID]
-  `
+  `,
 });
 ```

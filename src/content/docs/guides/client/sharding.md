@@ -57,21 +57,21 @@ string,
 
 ### sharderOptions
 
-| Property         | Type      | Description                          | Required                               | Default          |
-| ---------------- | --------- | ------------------------------------ | -------------------------------------- | ---------------- |
-| **_totalShard_** | string \  | number                               | number of total Shards                 | false            | auto  |
-| **_shardList_**  | string \  | number[]                             | List of Shards to spawn                | false            | auto  |
-| **_mode_**       | process \ | worker                               | type of Sharding Mode (child_process \ | worker_threads ) | false | process |
-| **_respawn_**    | boolean   | whether to respawn shards on exiting | false                                  | true             |
-| token            | string    | token to use for shard count         | false                                  | none             |
+| Property         | Type       | Description                          | Required                                | Default          |
+| ---------------- | ---------- | ------------------------------------ | --------------------------------------- | ---------------- | ----- | ------- |
+| **_totalShard_** | string \   | number                               | number of total Shards                  | false            | auto  |
+| **_shardList_**  | string \   | number[]                             | List of Shards to spawn                 | false            | auto  |
+| **_mode_**       | process \  | worker                               | type of Sharding Mode (child_process \  | worker_threads ) | false | process |
+| **_respawn_**    | boolean    | whether to respawn shards on exiting | false                                   | true             |
+| token            | string     | token to use for shard count         | false                                   | none             |
 
 ### spawnOptions
 
-| Property      | Type     | Description                                                                     | Required                  | Default |
-| ------------- | -------- | ------------------------------------------------------------------------------- | ------------------------- | ------- |
-| **_amount_**  | string \ | number                                                                          | number of shards to spawn | false   | `ClientShard#totalShards` |
-| **_delay_**   | number   | delay for spawning each shard ( `in ms` )                                       | false                     | 5500    |
-| **_timeout_** | number   | The amount in milliseconds to wait until the `Bot` has become ready ( `in ms` ) | false                     | 30000   |
+| Property      | Type      | Description                                                                     | Required                  | Default |
+| ------------- | --------- | ------------------------------------------------------------------------------- | ------------------------- | ------- | ------------------------- |
+| **_amount_**  | string \  | number                                                                          | number of shards to spawn | false   | `ClientShard#totalShards` |
+| **_delay_**   | number    | delay for spawning each shard ( `in ms` )                                       | false                     | 5500    |
+| **_timeout_** | number    | The amount in milliseconds to wait until the `Bot` has become ready ( `in ms` ) | false                     | 30000   |
 
 ## Example
 
@@ -81,7 +81,7 @@ This should be a new file, for example `shard.js`:
 const { ClientShard } = require("aoi.js");
 
 const sharder = new ClientShard("./index.js", {
-    token: "DISCORD BOT TOKEN"
+  token: "DISCORD BOT TOKEN",
 });
 
 sharder.startProcess();
@@ -92,15 +92,15 @@ This is is your main file which is the source running your Discord Bot, it's typ
 ```js title="index.js"
 const { AoiClient } = require("aoi.js");
 const bot = new AoiClient({
-    token: "DISCORD BOT TOKEN",
-    prefix: "DISCORD BOT PREFIX",
-    intents: ["Guilds", "GuildMessages", "MessageContent"],
-    events: ["onMessage", "onInteractionCreate"]
+  token: "DISCORD BOT TOKEN",
+  prefix: "DISCORD BOT PREFIX",
+  intents: ["Guilds", "GuildMessages", "MessageContent"],
+  events: ["onMessage", "onInteractionCreate"],
 });
 
 bot.command({
-    name: "ping",
-    code: `
+  name: "ping",
+  code: `
         Pong!
         WS -> $ping ms
         ShardId -> $shardId

@@ -16,8 +16,8 @@ $setMessageVar[varname;value;messageID?;table?]
 
 | Field      | Type    | Description         | Required |
 | ---------- | ------- | ------------------- | :------: |
-| varname    | string  | Variable name.      |  true    |
-| value      | string  | New Variable value. |  true    |
+| varname    | string  | Variable name.      |   true   |
+| value      | string  | New Variable value. |   true   |
 | messageID? | integer | Message ID.         |  false   |
 | table?     | string  | Variable table.     |  false   |
 
@@ -27,9 +27,9 @@ This will change the value of "Example" to "This is a value":
 
 ```javascript
 bot.command({
-    name: "setMessageVar",
-    code: `
+  name: "setMessageVar",
+  code: `
     $setMessageVar[Example;This is a value;$messageID;main]
-    `
+    `,
 });
 ```

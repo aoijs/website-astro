@@ -16,7 +16,7 @@ $getGuildVar[varname;guildID?;table?]
 
 | Field    | Type    | Description     | Required |
 | -------- | ------- | --------------- | :------: |
-| varname  | string  | Variable name.  |  true    |
+| varname  | string  | Variable name.  |   true   |
 | guildID? | integer | Guild ID.       |  false   |
 | table?   | string  | Variable table. |  false   |
 
@@ -26,9 +26,9 @@ This will return the value of a variable called "Example":
 
 ```javascript
 bot.command({
-    name: "getGuildVar",
-    code: `
+  name: "getGuildVar",
+  code: `
     $getGuildVar[Example;$guildID;main]
-    `
+    `,
 });
 ```

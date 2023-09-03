@@ -28,10 +28,10 @@ This will return `true` as the bot reacted to the initial command message:
 
 ```javascript
 bot.command({
-    name: 'userReacted',
-    code: `
+  name: "userReacted",
+  code: `
 $userReacted[$channelID;$messageID;$clientID;😩]
 $addCmdReactions[😩]
-  `
+  `,
 });
 ```

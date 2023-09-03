@@ -25,9 +25,9 @@ This will return `false` or `true` depending on if you're currently deafened or 
 
 ```javascript
 bot.command({
-    name: 'isDeafen',
-    code: `
+  name: "isDeafen",
+  code: `
   $isDeafen[$authorID;$guildID]
-  `
+  `,
 });
 ```

@@ -26,9 +26,9 @@ This will return `Hello` and remove `Bye` from the given text:
 
 ```javascript
 bot.command({
-    name: 'textSlice',
-    code: `
+  name: "textSlice",
+  code: `
   $textSlice[Hello Bye;0;5]
-  `
+  `,
 });
 ```

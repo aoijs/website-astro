@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an improvement you’d like to see added
-title: 'feat: '
+title: "feat: "
 labels: documentation, enhancement
 assignees: Faf4a
-
 ---
 
 **Is your feature request related to a problem? Please describe.**

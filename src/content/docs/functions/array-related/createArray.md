@@ -23,9 +23,9 @@ $createArray[name;...elements]
 
 ```javascript
 bot.command({
-    name: "array-create",
-    code: `
+  name: "array-create",
+  code: `
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

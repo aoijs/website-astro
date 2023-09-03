@@ -18,10 +18,10 @@ This will check if you mentioned `@here` or `@everyone`:
 
 ```javascript
 bot.command({
-    name: 'isEveryoneMentioned',
-    code: `
+  name: "isEveryoneMentioned",
+  code: `
   You did not mention @ everyone!
   $onlyIf[$isEveryoneMentioned==false;You tried to mention @ everyone!]
-  `
+  `,
 });
 ```

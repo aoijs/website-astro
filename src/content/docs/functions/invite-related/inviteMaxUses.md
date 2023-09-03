@@ -18,10 +18,10 @@ This will return the max uses of the created invite:
 
 ```javascript
 bot.inviteCreateCommand({
-    name: 'inviteMaxUses',
-    channel: '$channelID',
-    code: `
+  name: "inviteMaxUses",
+  channel: "$channelID",
+  code: `
   $inviteMaxUses
-  `
+  `,
 });
 ```

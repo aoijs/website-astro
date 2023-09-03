@@ -25,9 +25,9 @@ This will return all archived threads, if any:
 
 ```javascript
 bot.command({
-    name: 'fetchArchivedThreads',
-    code: `
+  name: "fetchArchivedThreads",
+  code: `
   $fetchArchivedThreads[$channelID;name]
-  `
+  `,
 });
 ```

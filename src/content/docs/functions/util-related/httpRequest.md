@@ -29,9 +29,9 @@ This will return a random dog fact using the `GET` method:
 
 ```javascript
 bot.command({
-    name: "httpRequest",
-    code: `
+  name: "httpRequest",
+  code: `
     $httpRequest[https://some-random-api.ml/facts/dog;GET;;fact;Something went wrong.]
-    `
+    `,
 });
 ```

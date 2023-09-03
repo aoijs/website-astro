@@ -26,10 +26,10 @@ This will create an embed with a footer and title:
 
 ```javascript
 bot.command({
-    name: 'embed',
-    code: `
+  name: "embed",
+  code: `
   $title[Hello!]
   $footer[Hello again!;$userAvatar]
-  `
+  `,
 });
 ```

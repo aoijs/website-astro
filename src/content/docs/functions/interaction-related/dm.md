@@ -19,6 +19,7 @@ $dm[userID]
 | userID | integer | The user which shall receive the DM. |   true   |
 
 **Important**:
+
 - You are unable to DM other bots.
 - You are unable to DM people who closed their DMs.
 
@@ -28,10 +29,10 @@ This will send an DM to you containing "Hello! Did you really think this works?"
 
 ```javascript
 bot.command({
-    name: 'dm',
-    code: `
+  name: "dm",
+  code: `
   Hello! Did you really think this works?
   $dm[$authorID]
-  `
+  `,
 });
 ```

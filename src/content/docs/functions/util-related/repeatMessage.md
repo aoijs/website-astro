@@ -25,9 +25,9 @@ This will return `Hello` twenty times:
 
 ```javascript
 bot.command({
-    name: 'repeatMessage',
-    code: `
+  name: "repeatMessage",
+  code: `
   $repeatMessage[20;Hello ]
-  `
+  `,
 });
 ```

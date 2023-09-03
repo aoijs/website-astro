@@ -12,9 +12,9 @@ id: tempCooldown
 $tempCooldown[time;id;errorMessage?]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$tempCooldown` function by using **`%time%`** or any of the
+- You are able to retrieve the remaining cooldown in the `$tempCooldown` function by using **`%time%`** or any of the
   following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+  - `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
 
 ## Parameters
 
@@ -30,10 +30,10 @@ This will set a temporary cooldown for a command which applies once only:
 
 ```javascript
 bot.command({
-    name: 'tempCooldown',
-    code: `
+  name: "tempCooldown",
+  code: `
   hello
   $tempCooldown[2m;customid;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

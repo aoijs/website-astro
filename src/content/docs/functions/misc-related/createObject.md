@@ -22,12 +22,12 @@ $createObject[object]
 
 ```javascript
 bot.command({
-    name: "createObject",
-    code: `
+  name: "createObject",
+  code: `
   $createObject[{
     "hello": "bye",
     "bye": "hello"
   }]
-  `
+  `,
 });
 ```

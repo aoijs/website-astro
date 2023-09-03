@@ -23,7 +23,7 @@ Learn more about the changes on their official [blog](https://support.discord.co
 | Channel                 | <#CHANNEL_ID>       | <#832704676096245800>            |    ![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/msg-formatting/channel.png)    |
 | Role                    | <@&ROLE_ID>         | <@&774059181820870696>           |     ![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/msg-formatting/role.png)      |
 | Slash Command           | </NAME:COMMAND_ID>  | </help:1061818977933873282>      |     ![preview](https://raw.githubusercontent.com/aoijs/website/main/assets/images/previews/msg-formatting/slash.png)     |
-| Standard Emoji          | Unicode Characters  | ❤️                                |                                                                                                                          |
+| Standard Emoji          | Unicode Characters  | ❤️                               |                                                                                                                          |
 | Custom Emoji            | <:NAME:ID>          | <:lerefblob:1010320053687832586> |                                                                                                                          |
 | Custom Emoji (Animated) | <a:NAME:ID>         | <a:b1nzy:392938283556143104>     |                                                                                                                          |
 | Unix Timestamp          | <t:TIMESTAMP>       | <t:1619757519>                   | ![img](https://cdn.discordapp.com/attachments/1082168708866244648/1087796841053171833/wX6f10lPbNKAgAAAAASUVORK5CYII.png) |

@@ -25,9 +25,9 @@ This will return `true` as `aoi.js` ends with `js`:
 
 ```javascript
 bot.command({
-    name: 'stringEndsWith',
-    code: `
+  name: "stringEndsWith",
+  code: `
   $stringEndsWith[aoi.js;js]
-  `
+  `,
 });
 ```

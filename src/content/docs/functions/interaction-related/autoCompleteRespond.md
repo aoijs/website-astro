@@ -30,8 +30,8 @@ your main file)
 
 ```javascript
 bot.command({
-    name: 'createSlashCommand',
-    code: `
+  name: "createSlashCommand",
+  code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
   "name": "option",
   "description": "test",
@@ -39,7 +39,7 @@ bot.command({
   "type": 3,
   "autocomplete": true
 }]
-  `
+  `,
 });
 ```
 
@@ -47,15 +47,15 @@ Interaction Command:
 
 ```javascript
 bot.command({
-    name: "test",
-    prototype: "slash",
-    code: `
+  name: "test",
+  prototype: "slash",
+  code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[First option;You selected the first option, therefore I'm responding with this!;Second option;You selected the first second, therefore I'm responding with this!]
   $else
   $interactionReply[$slashOption[option];;;;everyone]
   $endif
-  `
+  `,
 });
 ```
 
@@ -66,8 +66,8 @@ your main file)
 
 ```javascript
 bot.command({
-    name: 'createSlashCommand',
-    code: `
+  name: "createSlashCommand",
+  code: `
   $createApplicationCommand[global;example;Awesome example interaction command with auto-complete!;true;slash;[{
   "name": "option",
   "description": "test",
@@ -80,7 +80,7 @@ bot.command({
   "required": false,
   "type": 3
 }]
-  `
+  `,
 });
 ```
 
@@ -88,10 +88,10 @@ Interaction Command:
 
 ```javascript
 bot.command({
-    name: "test",
-    prototype: "slash",
-    $if: "old",
-    code: `
+  name: "test",
+  prototype: "slash",
+  $if: "old",
+  code: `
   $if[$isAutocomplete==true]
   $autoCompleteRespond[[{ 
     "name" : "First Option",
@@ -103,6 +103,6 @@ bot.command({
   $else
   $interactionReply[$slashOption[option] - autocomplete #SEMI# $slashOption[anotheroption] - false autocomplete;;;;everyone]
   $endif
-  `
+  `,
 });
 ```

@@ -24,9 +24,9 @@ This will return the automod rules of the current guild (if any):
 
 ```javascript
 bot.command({
-    name: 'getGuildAutomodNames',
-    code: `
+  name: "getGuildAutomodNames",
+  code: `
   $getGuildAutomodNames[$guildID]
-  `
+  `,
 });
 ```

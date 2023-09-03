@@ -24,9 +24,9 @@ This will return the amount of boosts a specific guild has:
 
 ```javascript
 bot.command({
-    name: 'guildBoostCount',
-    code: `
+  name: "guildBoostCount",
+  code: `
   $guildBoostCount[$guildID]
-  `
+  `,
 });
 ```

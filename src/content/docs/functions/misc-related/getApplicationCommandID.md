@@ -25,9 +25,9 @@ This will return the ID of an application command called "example", (if any):
 
 ```javascript
 bot.command({
-    name: "getApplicationCommandID",
-    code: `
+  name: "getApplicationCommandID",
+  code: `
   $getApplicationCommandID[example;global]
-  `
+  `,
 });
 ```

@@ -32,9 +32,9 @@ This will return the guild's verification Level:
 
 ```javascript
 bot.command({
-    name: 'guildVerificationLevel',
-    code: `
+  name: "guildVerificationLevel",
+  code: `
   $guildVerificationLevel[$guildID]
-  `
+  `,
 });
 ```

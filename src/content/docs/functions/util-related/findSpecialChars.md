@@ -24,9 +24,9 @@ This will return `######`:
 
 ```javascript
 bot.command({
-    name: 'findSpecialChars',
-    code: `
+  name: "findSpecialChars",
+  code: `
   $findSpecialChars[Aoi.js is ###### great]
-  `
+  `,
 });
 ```

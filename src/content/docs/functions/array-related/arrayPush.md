@@ -22,10 +22,10 @@ $arrayPush[...elements]
 
 ```javascript
 bot.command({
-    name: "array-push",
-    code: `
+  name: "array-push",
+  code: `
   $arrayPush[array;Leref;Ayaka;Ferel]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

@@ -27,8 +27,8 @@ This will either remove or add specific roles from you:
 
 ```javascript
 bot.command({
-    name: 'setRoles',
-    code: `
-   $setRoles[$guildID;$authorID;Some reason.;roleID1;roleID2;roleID3;....]`
+  name: "setRoles",
+  code: `
+   $setRoles[$guildID;$authorID;Some reason.;roleID1;roleID2;roleID3;....]`,
 });
 ```

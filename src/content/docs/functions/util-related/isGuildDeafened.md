@@ -25,9 +25,9 @@ This will return either `true` or `false` depending on if you're server deafened
 
 ```javascript
 bot.command({
-    name: 'isGuildDeafened',
-    code: `
+  name: "isGuildDeafened",
+  code: `
   $isGuildDeafened
-  `
+  `,
 });
 ```

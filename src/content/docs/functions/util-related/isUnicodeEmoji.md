@@ -24,9 +24,9 @@ This will return `true` as "🤓" is an valid unicode emoji:
 
 ```javascript
 bot.command({
-    name: 'isUnicodeEmoji',
-    code: `
+  name: "isUnicodeEmoji",
+  code: `
   $isUnicodeEmoji[🤓]
-  `
+  `,
 });
 ```

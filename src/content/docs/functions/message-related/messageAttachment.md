@@ -24,9 +24,9 @@ This will return your given attachment:
 
 ```javascript
 bot.command({
-    name: 'messageAttachment',
-    code: `
+  name: "messageAttachment",
+  code: `
   You had the following attachment in your message: $messageAttachment
-  `
+  `,
 });
 ```

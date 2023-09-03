@@ -15,8 +15,8 @@ $getMessageVar[varname;guildID?;table?]
 ## Parameters
 
 | Field      | Type    | Description     | Required |
-|------------|---------|-----------------|:--------:|
-| varname    | string  | Variable name.  |  true    |
+| ---------- | ------- | --------------- | :------: |
+| varname    | string  | Variable name.  |   true   |
 | messageID? | integer | message ID      |  false   |
 | table?     | string  | Variable table. |  false   |
 
@@ -26,9 +26,9 @@ This will return the value of a variable called "Example":
 
 ```javascript
 bot.command({
-    name: "getMessageVar",
-    code: `
+  name: "getMessageVar",
+  code: `
     $getMessageVar[Example;$messageID;main]
-    `
+    `,
 });
 ```

@@ -24,9 +24,9 @@ This will return `true` or `false` depending on if the guild is available:
 
 ```javascript
 bot.command({
-    name: 'guildAvailable',
-    code: `
+  name: "guildAvailable",
+  code: `
   $guildAvailable[$guildID]
-  `
+  `,
 });
 ```

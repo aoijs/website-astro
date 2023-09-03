@@ -27,10 +27,10 @@ $interactionReply[content?;embeds?;components?;files?;allowedMentions?;ephemeral
 
 ```javascript
 bot.interactionCommand({
-    name: "interactionReply",
-    prototype: "slash", // button/selectMenu/slash
-    code: `
+  name: "interactionReply",
+  prototype: "slash", // button/selectMenu/slash
+  code: `
   $interactionReply[Hello, world!;;;;everyone;false]
-  `
+  `,
 });
 ```

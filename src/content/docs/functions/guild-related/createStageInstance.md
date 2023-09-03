@@ -36,9 +36,9 @@ This will create start a new stage instance:
 
 ```javascript
 bot.command({
-    name: 'createStageInstance',
-    code: `
+  name: "createStageInstance",
+  code: `
   $createStageInstance[stageID;Testing!;1] 
-  ` // replace "stageID" with an actual stage ID
+  `, // replace "stageID" with an actual stage ID
 });
 ```

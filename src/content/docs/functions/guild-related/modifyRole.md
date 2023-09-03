@@ -26,11 +26,11 @@ This will edit a existing role / change its name to "Awesome!":
 
 ```javascript
 bot.command({
-    name: 'modifyRole',
-    code: `
+  name: "modifyRole",
+  code: `
   $modifyRole[$guildID;roleID;{
     "name": "Awesome!"
   }]
-  `
+  `,
 });
 ```

@@ -18,7 +18,7 @@ $sendTTS[channelID;message;returnID?]
 | --------- | ------- | -------------------------------------------------------------------- | :------: |
 | channelID | integer | The ID of the channel where the Text-To-Speech message will be sent. |   true   |
 | message   | string  | The content of the TTS message.                                      |   true   |
-| returnID? | boolean | Return message ID?  <br /> 1. **true** <br /> 2. **false** (default) |  false   |
+| returnID? | boolean | Return message ID? <br /> 1. **true** <br /> 2. **false** (default)  |  false   |
 
 ## Example(s)
 
@@ -26,9 +26,9 @@ This will send a TTS message in the current channel:
 
 ```javascript
 bot.command({
-    name: 'sendTTS',
-    code: `
+  name: "sendTTS",
+  code: `
    $sendTTS[$channelID;Hello!;false]
-  `
+  `,
 });
 ```

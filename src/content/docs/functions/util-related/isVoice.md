@@ -24,9 +24,9 @@ This will return either `true` or `false` depending on what you use as argument:
 
 ```javascript
 bot.command({
-    name: 'isVoice',
-    code: `
+  name: "isVoice",
+  code: `
   $isVoice[$channelID]
-  `
+  `,
 });
 ```

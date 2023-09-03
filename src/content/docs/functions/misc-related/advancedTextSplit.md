@@ -26,9 +26,9 @@ This will split `Hello` from `Bye` and return `Hello`:
 
 ```javascript
 bot.command({
-    name: 'advancedTextSplit',
-    code: `
+  name: "advancedTextSplit",
+  code: `
   $advancedTextSplit[Hello/Bye;/;1]
-  `
+  `,
 });
 ```

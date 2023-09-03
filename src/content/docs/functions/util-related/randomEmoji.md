@@ -18,9 +18,9 @@ This will return a random emoji ID of your guild:
 
 ```javascript
 bot.command({
-    name: 'randomEmoji',
-    code: `
+  name: "randomEmoji",
+  code: `
   $randomEmoji
-  `
+  `,
 });
 ```

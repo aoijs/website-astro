@@ -13,9 +13,9 @@ $cooldown[time;errorMessage
 ]
 ```
 
-* You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
+- You are able to retrieve the remaining cooldown in the `$cooldown` function by using **`%time%`** or any of the
   following below.
-    * `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
+  - `%time%`, `%year%`, `%month%`, `%week%`, `%day%`, `%hour%`, `%min%`, `%sec%`, `%ms%`, `%fullTime%`
 
 ## Parameters
 
@@ -30,10 +30,10 @@ This will set a cooldown for a command which applies to the user only and return
 
 ```javascript
 bot.command({
-    name: 'cooldown',
-    code: `
+  name: "cooldown",
+  code: `
   hello
   $cooldown[2m;Please wait %time% to execute this command again.]
-  `
+  `,
 });
 ```

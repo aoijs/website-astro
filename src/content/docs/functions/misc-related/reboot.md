@@ -18,9 +18,9 @@ This will restart your bot:
 
 ```javascript
 bot.command({
-    name: "reboot",
-    code: `
+  name: "reboot",
+  code: `
     $reboot
-    `
+    `,
 });
 ```

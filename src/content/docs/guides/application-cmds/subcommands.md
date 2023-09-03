@@ -27,8 +27,8 @@ $createApplicationCommand[guildID/global;name;description;defaultPermission(true
 
 ```js
 bot.command({
-    name: "createApplicationCommand",
-    code: `
+  name: "createApplicationCommand",
+  code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
 {
   "name": "kick",
@@ -40,7 +40,7 @@ bot.command({
   "description": "Ban someone of your guild!",
   "type": 1 
 }
-]]`
+]]`,
 });
 ```
 
@@ -50,8 +50,8 @@ Creating sub commands with options or choices work basically the same as any oth
 
 ```js
 bot.command({
-    name: "createApplicationCommand",
-    code: `
+  name: "createApplicationCommand",
+  code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[
   {
     name: "kick",
@@ -77,7 +77,7 @@ bot.command({
     description: "Ban someone of your guild!",
     type: 1,
   },
-];`
+];`,
 });
 ```
 
@@ -95,44 +95,47 @@ To interact with those we need to filter the different options of the "moderatio
 $onlyIf[$interactionData[options._subcommand]==sub_command_name;]
 ```
 
-`$interactionData` contains information about the interaction, and we use `$onlyIf` to check if the subcommand matches ours. 
+`$interactionData` contains information about the interaction, and we use `$onlyIf` to check if the subcommand matches ours.
 
 This will basically check for the sub command name and if it doesn't match it will block the command, so for our case it would look something like this..
 
 ```js
 bot.interactionCommand({
-    name: "moderation",
-    prototype: "slash",
-    code: `
+  name: "moderation",
+  prototype: "slash",
+  code: `
     $interactionReply[You picked the **ban** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==ban;]`
-})
+    $onlyIf[$interactionData[options._subcommand]==ban;]`,
+});
 
 bot.interactionCommand({
-    name: "moderation",
-    prototype: "slash",
-    code: `
+  name: "moderation",
+  prototype: "slash",
+  code: `
     $interactionReply[You picked the **kick** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==kick;]`
-})
+    $onlyIf[$interactionData[options._subcommand]==kick;]`,
+});
 ```
 
 Here's the handler example (which has the ability to store multiple commands in the same file, therfore its compacter):
 
 ```js
-module.exports = [{
+module.exports = [
+  {
     name: "moderation",
     prototype: "slash",
     type: "interaction",
     code: `
     $interactionReply[You picked the **ban** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==ban;]`
-}, {
+    $onlyIf[$interactionData[options._subcommand]==ban;]`,
+  },
+  {
     name: "moderation",
     prototype: "slash",
     type: "interaction",
     code: `
     $interactionReply[You picked the **kick** sub command!]
-    $onlyIf[$interactionData[options._subcommand]==kick;]`
-}]
+    $onlyIf[$interactionData[options._subcommand]==kick;]`,
+  },
+];
 ```

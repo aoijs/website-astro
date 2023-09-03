@@ -24,9 +24,9 @@ This will return your given message:
 
 ```javascript
 bot.command({
-    name: 'message',
-    code: `
+  name: "message",
+  code: `
   You said: "$message"
-  ` // [prefix]message Hello!
+  `, // [prefix]message Hello!
 });
 ```

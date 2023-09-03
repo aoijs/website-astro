@@ -25,9 +25,9 @@ This will return the amount of roles you have assigned:
 
 ```javascript
 bot.command({
-    name: 'userRolesCount',
-    code: `
+  name: "userRolesCount",
+  code: `
   $userRolesCount[$authorID;$guildID]
-  `
+  `,
 });
 ```

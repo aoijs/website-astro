@@ -24,23 +24,23 @@ Ensure you edited the first line of code when you start using the LoadCommands c
 const { AoiClient, LoadCommands } = require("aoi.js");
 
 const bot = new AoiClient({
-    token: "Discord Bot Token",
-    prefix: "Discord Bot Prefix",
-    intents: ["Guilds", "GuildMessages", "MessageContent"],
-    events: ["onMessage", "onInteractionCreate"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
-    }
+  token: "Discord Bot Token",
+  prefix: "Discord Bot Prefix",
+  intents: ["Guilds", "GuildMessages", "MessageContent"],
+  events: ["onMessage", "onInteractionCreate"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
+    },
+  },
 });
 
 const loader = new LoadCommands(bot);
-loader.load(bot.cmd, "./commands/") //you can change this to any directory you want
+loader.load(bot.cmd, "./commands/"); //you can change this to any directory you want
 ```
 
 ### Setting everything up with folders and files
@@ -81,15 +81,17 @@ module.exports = ({...})
 Open your `help.js` and copy & paste the following code snippet:
 
 ```javascript title="commands/help.js"
-module.exports = [{
+module.exports = [
+  {
     name: "help",
     aliases: ["helpcmd", "helpme"],
     code: `
 $title[Help Command!]
 $thumbnail[$userAvatar[$authorID]] 
 $description[Any text you like can go here!]
-$footer[Even footers!]`
-}];
+$footer[Even footers!]`,
+  },
+];
 ```
 
 Now restart your bot, and let the magic happen! Simply use `[prefix]help` or any of the aliases to make the message
@@ -101,20 +103,23 @@ From now on, you can have multiple commands in one file, this is useful for `awa
 create a little nice welcome command and combine the command from above with it!
 
 ```javascript title="commands/help.js"
-module.exports = [{
+module.exports = [
+  {
     name: "help",
     aliases: ["helpcmd", "helpme"],
     code: `
 $title[Help Command!]
 $thumbnail[$userAvatar[$authorID]] 
 $description[Any text you like can go here!]
-$footer[Even footers!]`
-}, {
+$footer[Even footers!]`,
+  },
+  {
     type: "join",
     channel: "$channelID",
     code: `
-$log[Someone joined a server!]`
-}]
+$log[Someone joined a server!]`,
+  },
+];
 ```
 
 :::info  
@@ -123,6 +128,7 @@ All Command Types can be found [here](./1events.md)!
 
 Make sure you have the required intents and `onJoin` in the `events` property in your `index.js` or else this won't
 work!
+
 > **Required intents: `GuildMembers`**
 
 ### Updating your commands without restart!

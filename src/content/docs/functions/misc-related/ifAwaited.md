@@ -39,16 +39,16 @@ This will execute the `awaitedCommand` awaited command as the statement is true:
 
 ```javascript
 bot.command({
-    name: "ifAwaited",
-    code: `
+  name: "ifAwaited",
+  code: `
     $ifAwaited[1==1;{execute:awaitedCommand}]
-    `
+    `,
 });
 
 bot.awaitedCommand({
-    name: "awaitedCommand",
-    code: `
+  name: "awaitedCommand",
+  code: `
     $sendMessage[That's true!;false]
-    `
+    `,
 });
 ```

@@ -25,9 +25,9 @@ This will create a new variable with the name of "variable" and the value of "va
 
 ```javascript
 bot.command({
-    name: "createVar",
-    code: `
+  name: "createVar",
+  code: `
   $createVar[main;variable;value]
-  `
+  `,
 });
 ```

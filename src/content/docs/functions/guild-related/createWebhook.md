@@ -28,9 +28,9 @@ This will create a webhook in the current channel:
 
 ```javascript
 bot.command({
-    name: 'createWebhook',
-    code: `
+  name: "createWebhook",
+  code: `
   $createWebhook[$channelID;aoi.js is great;$userAvatar[$authorID];Just testing.;, ]
-  `
+  `,
 });
 ```

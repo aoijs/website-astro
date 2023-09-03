@@ -27,16 +27,16 @@ This will change the variable value of each guild to "test":
 
 ```javascript
 bot.command({
-    name: "forEachGuild",
-    code: `
+  name: "forEachGuild",
+  code: `
   $forEachGuild[2s;{"value": "test"};awaitedCommand;]
-  `
+  `,
 });
 
 bot.awaitedCommand({
-    name: "awaitedCommand",
-    code: `
+  name: "awaitedCommand",
+  code: `
   $setGuildVar[varname;$awaitData[value];$guildID]
-  `
+  `,
 });
 ```

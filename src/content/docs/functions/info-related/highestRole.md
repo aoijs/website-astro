@@ -26,9 +26,9 @@ This will return the name of your highest role:
 
 ```javascript
 bot.command({
-    name: 'userHighestRole',
-    code: `
+  name: "userHighestRole",
+  code: `
   $userHighestRole[$authorID;$guildID;name]
-  `
+  `,
 });
 ```

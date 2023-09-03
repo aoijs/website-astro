@@ -25,9 +25,9 @@ This will return either `true` or `false` depending on if you're muted (voice ch
 
 ```javascript
 bot.command({
-    name: 'isSelfDeafened',
-    code: `
+  name: "isSelfDeafened",
+  code: `
   $isSelfDeafened
-  `
+  `,
 });
 ```

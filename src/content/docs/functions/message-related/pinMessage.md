@@ -25,10 +25,10 @@ This will pin the bot's message:
 
 ```javascript
 bot.command({
-    name: 'pinMessage',
-    code: `
+  name: "pinMessage",
+  code: `
   $pinMessage[$get[id]]
   $let[id;$sendMessage[Hello!;true]
-  ` // using $let & $get to save the message ID
+  `, // using $let & $get to save the message ID
 });
 ```

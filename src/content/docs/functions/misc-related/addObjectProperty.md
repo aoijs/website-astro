@@ -25,11 +25,11 @@ This will return `Ferel` from the `Leref` Property:
 
 ```javascript
 bot.command({
-    name: 'addObjectProperty',
-    code: `
+  name: "addObjectProperty",
+  code: `
   $getObjectProperty[Leref]
   $addObjectProperty[Leref;Ferel]
   $createObject[{}]
-  `
+  `,
 });
 ```

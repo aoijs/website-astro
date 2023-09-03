@@ -27,10 +27,10 @@ return `1` due to the bot being the only one who reacted to it:
 
 ```javascript
 bot.command({
-    name: 'reactionCount',
-    code: `
+  name: "reactionCount",
+  code: `
 There are: $reactionCount[$channelID;$messageID;😫] reactions!
 $addCmdReactions[😫]
-`
+`,
 });
 ```

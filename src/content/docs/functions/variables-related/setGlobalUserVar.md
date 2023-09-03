@@ -16,8 +16,8 @@ $setGlobalUserVar[varname;value;userID?;table?]
 
 | Field   | Type    | Description         | Required |
 | ------- | ------- | ------------------- | :------: |
-| varname | string  | Variable name.      |  true    |
-| value   | string  | New Variable value. |  true    |
+| varname | string  | Variable name.      |   true   |
+| value   | string  | New Variable value. |   true   |
 | userID? | integer | User ID.            |  false   |
 | table?  | string  | Variable table.     |  false   |
 
@@ -27,9 +27,9 @@ This will change the value of "Example" to "This is a value" for the command aut
 
 ```javascript
 bot.command({
-    name: "setGlobalUserVar",
-    code: `
+  name: "setGlobalUserVar",
+  code: `
     $setGlobalUserVar[Example;This is a value;$authorID;main]
-    `
+    `,
 });
 ```

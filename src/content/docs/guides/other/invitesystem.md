@@ -14,23 +14,23 @@ The built-in invite system offers the ability to cache and manage your invites o
 const { AoiClient, LoadCommands, AoiInviteSystem } = require("aoi.js");
 
 const bot = new AoiClient({
-    token: process.env.token,
-    prefix: "!",
-    intents: ["MessageContent", "Guilds", "GuildMessages", "GuildInvites"],
-    events: ["onMessage", "onInviteCreate", "onInviteDelete"],
-    database: {
-        type: "aoi.db",
-        db: require("@akarui/aoi.db"),
-        tables: ["main"],
-        path: "./database/",
-        extraOptions: {
-            dbType: "KeyValue"
-        }
+  token: process.env.token,
+  prefix: "!",
+  intents: ["MessageContent", "Guilds", "GuildMessages", "GuildInvites"],
+  events: ["onMessage", "onInviteCreate", "onInviteDelete"],
+  database: {
+    type: "aoi.db",
+    db: require("@akarui/aoi.db"),
+    tables: ["main"],
+    path: "./database/",
+    extraOptions: {
+      dbType: "KeyValue",
     },
-    fetchInvites: {
-        cacheInviters: true,
-        enabled: true,
-    }
+  },
+  fetchInvites: {
+    cacheInviters: true,
+    enabled: true,
+  },
 });
 
 new AoiInviteSystem(bot, true);
@@ -45,9 +45,8 @@ fetchInvites: {
 }
 ```
 
-
 ```js title="AoiInviteSystem Class"
-AoiInviteSystem(clientInstance, enableCaching)
+AoiInviteSystem(clientInstance, enableCaching);
 ```
 
 ---
@@ -60,7 +59,7 @@ AoiInviteSystem(clientInstance, enableCaching)
 bot.inviteCreateCommand({
     name?: string,
     channel: integer,
-    code: string 
+    code: string
 })
 ```
 
@@ -69,7 +68,7 @@ module.exports = ({
     name?: string,
     type: "inviteCreate",
     channel: integer,
-    code: string 
+    code: string
 })
 ```
 
@@ -81,7 +80,7 @@ module.exports = ({
 bot.inviteDeleteCommand({
     name?: string,
     channel: integer,
-    code: string 
+    code: string
 })
 ```
 
@@ -90,6 +89,6 @@ module.exports = ({
     name?: string,
     type: "inviteDelete",
     channel: integer,
-    code: string 
+    code: string
 })
 ```

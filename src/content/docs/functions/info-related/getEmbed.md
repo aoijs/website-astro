@@ -24,24 +24,24 @@ $getEmbed[channelID?;messageID?;index?;option?]
 <details>
   <summary><h3> Options </h3></summary>
 
-| Type                                | Description                      |
-| ----------------------------------- | -------------------------------- |
-| title                               | Title of the embed.              |
-| description                         | Description of the embed.        |
-| URL                                 | The URL in the title.            |
-| color                               | Color of the embed.              |
-| timestamp                           | Timestamp located in the footer. |
+| Type                               | Description                      |
+| ---------------------------------- | -------------------------------- |
+| title                              | Title of the embed.              |
+| description                        | Description of the embed.        |
+| URL                                | The URL in the title.            |
+| color                              | Color of the embed.              |
+| timestamp                          | Timestamp located in the footer. |
 | field<index\>.name / field1.name   | Field title.                     |
 | field<index\>.value / field1.value | Field description.               |
-| thumbnail                           | Thumbnail (image top right).     |
-| image                               | Large image at the bottom.       |
-| video                               | Video/GIF.                       |
-| author                              | Author, above title field.       |
-| footer                              | Footer.                          |
-| files                               | Attached files.                  |
-| createdAt                           | Creation date of the embed.      |
-| hexColor                            | Hex color of the embed.          |
-| length                              | Length of the embed.             |
+| thumbnail                          | Thumbnail (image top right).     |
+| image                              | Large image at the bottom.       |
+| video                              | Video/GIF.                       |
+| author                             | Author, above title field.       |
+| footer                             | Footer.                          |
+| files                              | Attached files.                  |
+| createdAt                          | Creation date of the embed.      |
+| hexColor                           | Hex color of the embed.          |
+| length                             | Length of the embed.             |
 
 </details>
 
@@ -51,9 +51,9 @@ This will return the description of an embed:
 
 ```javascript
 bot.command({
-    name: 'getEmbed',
-    code: `
+  name: "getEmbed",
+  code: `
 $getEmbed[$channelID;messageID;1;description] 
-  ` // make sure to replace messageID with the actual message ID 
+  `, // make sure to replace messageID with the actual message ID
 });
 ```

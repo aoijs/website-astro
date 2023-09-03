@@ -22,9 +22,9 @@ $closeTicket[error?]
 
 ```javascript
 bot.command({
-    name: "closeTicket",
-    code: `
+  name: "closeTicket",
+  code: `
   $closeTicket[Something went wrong!]
-  `
+  `,
 });
 ```

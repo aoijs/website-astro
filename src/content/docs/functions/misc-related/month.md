@@ -18,9 +18,9 @@ This will returns the current month:
 
 ```javascript
 bot.command({
-    name: "month",
-    code: `
+  name: "month",
+  code: `
     $month
-    `
+    `,
 });
 ```

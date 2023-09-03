@@ -24,10 +24,10 @@ This will create a embed with timestamp and description:
 
 ```javascript
 bot.command({
-    name: 'addTimestamp',
-    code: `
+  name: "addTimestamp",
+  code: `
   $description[Hello!]
   $addTimestamp
-  `
+  `,
 });
 ```

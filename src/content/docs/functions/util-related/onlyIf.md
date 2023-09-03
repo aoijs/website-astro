@@ -25,10 +25,10 @@ This will return the error message as 5 does not equal to 3:
 
 ```javascript
 bot.command({
-    name: "onlyIf",
-    code: `
+  name: "onlyIf",
+  code: `
     Ok.
     $onlyIf[5==3;That's wrong!]
-    `
+    `,
 });
 ```

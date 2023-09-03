@@ -30,9 +30,9 @@ requirements:
 
 ```javascript
 bot.command({
-    name: 'pruneMembers',
-    code: `
+  name: "pruneMembers",
+  code: `
    $pruneMembers[4;$guildID;$guildID;true;Pruning!;true]
-  `
+  `,
 });
 ```

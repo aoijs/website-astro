@@ -27,13 +27,13 @@ bot.command({
   name: "awaitData",
   code: `
   $forEachMember[1s;{ "members": "$membersCount" };returnMembers;]
-  `
+  `,
 });
 
 bot.awaitedCommand({
   name: "returnMembers",
   code: `
   $log[ $authorID , is one out of $awaitData[members] members ]
-  `
+  `,
 });
 ```

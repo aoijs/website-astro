@@ -18,9 +18,9 @@ This will respawn all shards (requires sharding):
 
 ```javascript
 bot.command({
-    name: 'respawnAllShards',
-    code: `
+  name: "respawnAllShards",
+  code: `
    $respawnAllShards
-  `
+  `,
 });
 ```

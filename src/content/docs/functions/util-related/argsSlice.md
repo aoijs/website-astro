@@ -9,7 +9,7 @@ id: argsSlice
 ## Usage
 
 ```php
-$argsSlice[text;from?;to] 
+$argsSlice[text;from?;to]
 ```
 
 ## Parameters
@@ -26,9 +26,9 @@ This will return `Bye` and remove `Hello` from the given text:
 
 ```javascript
 bot.command({
-    name: 'slice',
-    code: `
+  name: "slice",
+  code: `
   $argsSlice[Hello Bye;1;5]
-  `
+  `,
 });
 ```

@@ -24,9 +24,9 @@ This will return the guild's preferred locale:
 
 ```javascript
 bot.command({
-    name: 'guildPreferredLocale',
-    code: `
+  name: "guildPreferredLocale",
+  code: `
   $guildPreferredLocale[$guildID]
-  `
+  `,
 });
 ```

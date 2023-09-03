@@ -24,9 +24,9 @@ This will return your profile banner color (if any):
 
 ```javascript
 bot.command({
-    name: 'userBanner',
-    code: `
+  name: "userBanner",
+  code: `
   $userBannerColor[$authorID]
-  `
+  `,
 });
 ```

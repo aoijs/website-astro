@@ -19,11 +19,10 @@ $newChannel[option]
 | ------ | ------ | ------------------- | :------: |
 | option | string | Option to retrieve. |   true   |
 
-
 ### Options
 
 | Field                      | Type    | Description                                                              |
-| -------------------------- | --------| ------------------------------------------------------------------------ |
+| -------------------------- | ------- | ------------------------------------------------------------------------ |
 | name                       | string  | Returns channel name.                                                    |
 | id                         | integer | Returns channel ID.                                                      |
 | createdAt                  | integer | Returns date of when was channel created.                                |
@@ -53,37 +52,46 @@ $newChannel[option]
 | messageCount               | integer | Returns message count of messages sent in current channel.               |
 
 ## Example(s)
+
 ```js
 bot.channelCreateCommand({
-    channel: "channelid",
-    code: `
+  channel: "channelid",
+  code: `
     New channel has been created!
 - Name: $newChannel[name]
 - ID: $newChannel[id]
-- <#$newChannel[id]>`
-})
+- <#$newChannel[id]>`,
+});
 ```
-- This code will execute when __channel is created__.
+
+- This code will execute when **channel is created**.
+
 ---
+
 ```js
 bot.channelDeleteCommand({
-    channel: "channelid",
-    code: `
+  channel: "channelid",
+  code: `
     Channel has been deleted!
 - Name: $oldChannel[name]
-- ID: $oldChannel[id]`
-})
+- ID: $oldChannel[id]`,
+});
 ```
-- This code will execute when __channel is deleted__.
+
+- This code will execute when **channel is deleted**.
+
 ---
+
 ```js
 bot.channelUpdateCommand({
-    channel: "channelid",
-    code: `
+  channel: "channelid",
+  code: `
     Channel has been updated!
 - New name: $newChannel[name]
- - Old name: $oldChannel[name]`
-})
+ - Old name: $oldChannel[name]`,
+});
 ```
-- This code will execute when __channel is updated__.
+
+- This code will execute when **channel is updated**.
+
 ---

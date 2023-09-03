@@ -35,9 +35,9 @@ This will return your account create date:
 
 ```javascript
 bot.command({
-    name: 'creationDate',
-    code: `
+  name: "creationDate",
+  code: `
   Your account was created: $creationDate[$authorID;date]
-  `
+  `,
 });
 ```

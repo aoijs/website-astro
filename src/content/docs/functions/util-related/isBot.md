@@ -24,9 +24,9 @@ This will return `true` as your bot is, obviously, a bot:
 
 ```javascript
 bot.command({
-    name: 'isBot',
-    code: `
+  name: "isBot",
+  code: `
   $isBot[$clientID]
-  `
+  `,
 });
 ```

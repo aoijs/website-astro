@@ -25,9 +25,9 @@ This will send an embed with the content `aoi.js is great!`:
 
 ```javascript
 bot.command({
-    name: 'embed',
-    code: `
+  name: "embed",
+  code: `
   $description[aoi.js is great!]
-  `
+  `,
 });
 ```

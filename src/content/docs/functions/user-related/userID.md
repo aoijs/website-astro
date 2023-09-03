@@ -24,9 +24,9 @@ This will return your user ID:
 
 ```javascript
 bot.command({
-    name: 'userID',
-    code: `
+  name: "userID",
+  code: `
   $userID[$username]
-  `
+  `,
 });
 ```

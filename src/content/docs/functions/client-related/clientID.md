@@ -18,9 +18,9 @@ This will return the client's ID:
 
 ```javascript
 bot.command({
-    name: 'clientID',
-    code: `
+  name: "clientID",
+  code: `
   $clientID
-  `
+  `,
 });
 ```

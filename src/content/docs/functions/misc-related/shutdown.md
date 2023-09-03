@@ -18,9 +18,9 @@ This will shutdown your bot:
 
 ```javascript
 bot.command({
-    name: "shutdown",
-    code: `
+  name: "shutdown",
+  code: `
     $shutdown
-    `
+    `,
 });
 ```

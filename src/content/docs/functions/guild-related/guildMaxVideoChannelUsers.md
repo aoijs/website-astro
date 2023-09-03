@@ -24,9 +24,9 @@ This will return the max amount of video channel users of the current guild (if 
 
 ```javascript
 bot.command({
-    name: 'guildMaxVideoChannelUsers',
-    code: `
+  name: "guildMaxVideoChannelUsers",
+  code: `
   $guildMaxVideoChannelUsers[$guildID]
-  `
+  `,
 });
 ```

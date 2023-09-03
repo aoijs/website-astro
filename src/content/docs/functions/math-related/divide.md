@@ -24,9 +24,9 @@ This will return `23` as `69/3` equals it.
 
 ```javascript
 bot.command({
-    name: 'divide',
-    code: `
+  name: "divide",
+  code: `
   $divide[69;3]
-  `
+  `,
 });
 ```

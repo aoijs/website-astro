@@ -24,8 +24,8 @@ This will change the client's avatar to the command author's user avatar:
 
 ```javascript
 bot.command({
-    name: 'setClientAvatar',
-    code: `
-   $setClientAvatar[$userAvatar[$authorID]]`
+  name: "setClientAvatar",
+  code: `
+   $setClientAvatar[$userAvatar[$authorID]]`,
 });
 ```

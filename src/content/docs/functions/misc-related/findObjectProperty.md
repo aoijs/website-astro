@@ -25,9 +25,9 @@ This will return `{"object": "property"}` as it was able to find "object":
 
 ```javascript
 bot.command({
-    name: 'findObjectProperty',
-    code: `
+  name: "findObjectProperty",
+  code: `
   $findObjectProperty[object;{"aoijs": "leref", "object": "property"}]
-  `
+  `,
 });
 ```

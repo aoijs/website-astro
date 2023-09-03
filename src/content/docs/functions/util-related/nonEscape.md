@@ -24,9 +24,9 @@ This will stop from escaping certain characters:
 
 ```javascript
 bot.command({
-    name: 'nonEscape',
-    code: `
+  name: "nonEscape",
+  code: `
   $nonEscape[Hello [;)]]
-  `
+  `,
 });
 ```

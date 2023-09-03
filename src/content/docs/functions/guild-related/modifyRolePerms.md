@@ -26,7 +26,7 @@ $modifyRolePerms[guildID;roleID;...perms]
 | `+` | Allow a specific permission to someone or something. |
 | `/` | Reset a specific permission to its default state.    |
 
-You can find all permissions __[here](../../guides/client/2permissions.md)__.
+You can find all permissions **[here](../../guides/client/2permissions.md)**.
 
 ## Example(s)
 
@@ -34,10 +34,10 @@ This will edit a existing role's permission and allow the "@everyone" role to se
 
 ```javascript
 bot.command({
-    name: 'modifyRolePerms',
-    code: `
+  name: "modifyRolePerms",
+  code: `
   $modifyRolePerms[$guildID;$guildID;+sendmessages;+addreactions]"
   }]
-  `
+  `,
 });
 ```

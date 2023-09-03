@@ -21,6 +21,7 @@ $userPlatform[userID?;guildID?;sep?]
 | sep?     | string  | The separator to split multiple platforms.    |  false   |
 
 ### Platforms:
+
 - **web** - The user is currently using the web client.
 - **mobile** - The user is using the mobile app.
 - **desktop** - The user is using the desktop app.
@@ -32,9 +33,9 @@ This will return your platform you're using Discord on:
 
 ```javascript
 bot.command({
-    name: 'userPlatform',
-    code: `
+  name: "userPlatform",
+  code: `
   $userPlatform[$authorID;$guildID;, ]
-  `
+  `,
 });
 ```

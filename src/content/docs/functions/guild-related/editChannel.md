@@ -59,9 +59,9 @@ This will change the current channel name to "i-love-aoijs":
 
 ```javascript
 bot.command({
-    name: 'editChannel',
-    code: `
+  name: "editChannel",
+  code: `
   $editChannel[$channelID;i-love-aoi-js]
-  `
+  `,
 });
 ```

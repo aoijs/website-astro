@@ -31,9 +31,9 @@ This will return the date when you started boosting (wont work when you're not b
 
 ```javascript
 bot.command({
-    name: 'boostingSince',
-    code: `
+  name: "boostingSince",
+  code: `
   $boostingSince[$guildID;$authorID;date]
-  `
+  `,
 });
 ```

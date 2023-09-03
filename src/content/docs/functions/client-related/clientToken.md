@@ -20,9 +20,9 @@ This will return the client's Token:
 
 ```javascript
 bot.command({
-    name: 'clientToken',
-    code: `
+  name: "clientToken",
+  code: `
   $clientToken
-  `
+  `,
 });
 ```

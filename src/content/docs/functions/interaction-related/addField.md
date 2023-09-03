@@ -26,10 +26,10 @@ This will send an embed with a field and description:
 
 ```javascript
 bot.command({
-    name: 'addField',
-    code: `
+  name: "addField",
+  code: `
   $addField[Example;Look at this!;false]
   $description[Hello!]
-  `
+  `,
 });
 ```

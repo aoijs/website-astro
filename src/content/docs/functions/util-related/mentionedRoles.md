@@ -24,9 +24,9 @@ This will return the ID of the **first** role mention if you attempt to mention 
 
 ```javascript
 bot.command({
-    name: 'mentionedRoles',
-    code: `
+  name: "mentionedRoles",
+  code: `
   $mentionedRoles[1]
-  `
+  `,
 });
 ```

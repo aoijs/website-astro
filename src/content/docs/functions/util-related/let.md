@@ -25,10 +25,10 @@ This will return `Ayaka` from `$get`:
 
 ```javascript
 bot.command({
-    name: 'let',
-    code: `
+  name: "let",
+  code: `
 $get[genius]
 $let[genius;Ayaka]
-`
+`,
 });
 ```

@@ -1,10 +1,10 @@
 ---
 title: $userInfo
-description: $userInfo will return information about a user's invites. 
+description: $userInfo will return information about a user's invites.
 id: userInfo
 ---
 
-`$userInfo` will return information about a user's invites. 
+`$userInfo` will return information about a user's invites.
 
 ## Usage
 
@@ -30,16 +30,15 @@ $userInfo[option;userID?]
 | total         | number | Total invites.             |
 | leave         | number | Amount of users that left. |
 
-
 ## Example(s)
 
 This will return information about your invite data (requires events and intents, as well as invite setup):
 
 ```javascript
 bot.command({
-    name: 'userInfo',
-    code: `
+  name: "userInfo",
+  code: `
   $userInfo[total;$authorID]
-  `
+  `,
 });
 ```

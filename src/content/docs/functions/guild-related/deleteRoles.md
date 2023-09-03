@@ -25,10 +25,10 @@ This will delete roles of your guilds ( make sure to add actual IDs ):
 
 ```javascript
 bot.command({
-    name: 'deleteRoles',
-    code: `
+  name: "deleteRoles",
+  code: `
   Deleted three roles!
   $deleteRoles[$guildID;roleID1;roleID2;roleID3]
-  `
+  `,
 });
 ```

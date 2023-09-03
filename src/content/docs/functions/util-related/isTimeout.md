@@ -25,9 +25,9 @@ This will check if you're timeouted and either return `true` or `false`:
 
 ```javascript
 bot.command({
-    name: 'isTimeout',
-    code: `
+  name: "isTimeout",
+  code: `
   $isTimeout[$guildID;$authorID]
-  `
+  `,
 });
 ```

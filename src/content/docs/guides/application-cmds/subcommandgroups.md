@@ -29,8 +29,8 @@ The official documentation can be found [here](https://discord.com/developers/do
 
 ```js
 bot.command({
-    name: "createApplicationCommand",
-    code: `
+  name: "createApplicationCommand",
+  code: `
   $createApplicationCommand[guildID/global;moderation;Moderation Commands!;true;slash;[{
             "name": "user",
             "description": "Get or edit permissions for a user",
@@ -66,7 +66,7 @@ bot.command({
             ]
         }
     ]
-}]`
+}]`,
 });
 ```
 
@@ -82,6 +82,6 @@ To interact with those we need to filter the different options of the "moderatio
 $onlyIf[$interactionData[options._subcommand]==sub_command_name;]
 ```
 
-`$interactionData` contains information about the interaction, and we use `$onlyIf` to check if the subcommand matches ours. 
+`$interactionData` contains information about the interaction, and we use `$onlyIf` to check if the subcommand matches ours.
 
 This will basically check for the sub command name and if it doesn't match it will block the command, so for our case it would look something like this..

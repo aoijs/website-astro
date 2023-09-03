@@ -22,10 +22,10 @@ $arrayPop[name]
 
 ```javascript
 bot.command({
-    name: "array-pop",
-    code: `
+  name: "array-pop",
+  code: `
   $arrayPop[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

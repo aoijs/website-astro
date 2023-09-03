@@ -25,9 +25,9 @@ This will return your join position, if you're the owner then it'd be `1`:
 
 ```javascript
 bot.command({
-    name: 'memberJoinPosition',
-    code: `
+  name: "memberJoinPosition",
+  code: `
   $memberJoinPosition[$authorID;$guildID]
-  `
+  `,
 });
 ```

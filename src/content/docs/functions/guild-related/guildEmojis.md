@@ -25,9 +25,9 @@ This will return the emojis of your guild:
 
 ```javascript
 bot.command({
-    name: 'guildEmojis',
-    code: `
+  name: "guildEmojis",
+  code: `
   $guildEmojis[, ;$guildID]
-  `
+  `,
 });
 ```

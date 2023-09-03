@@ -5,5 +5,7 @@ id: interaction-messagecommands
 ---
 
 :::tip[Unfinished]
-## This guide is unfinished, and will change in the future.  
+
+## This guide is unfinished, and will change in the future.
+
 :::

@@ -23,9 +23,9 @@ $deleteApplicationCommand[guildID/global;id]
 
 ```javascript
 bot.command({
-    name: 'deleteApplicationCommand',
-    code: `
+  name: "deleteApplicationCommand",
+  code: `
   $deleteApplicationCommand[$guildID;$getApplicationCommandID[application-command-name;$guildID]]
-  `
+  `,
 });
 ```

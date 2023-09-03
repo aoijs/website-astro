@@ -22,9 +22,9 @@ $noMentionMessage[args]
 
 ```javascript
 bot.command({
-    name: "noMentionMessage",
-    code: `
+  name: "noMentionMessage",
+  code: `
     $noMentionMessage[1]
-    `
+    `,
 });
 ```

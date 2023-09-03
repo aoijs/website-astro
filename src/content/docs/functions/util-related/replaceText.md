@@ -27,10 +27,10 @@ This will replace `M` with `D` and the output will be `Donkey`:
 
 ```javascript
 bot.command({
-    name: 'replaceText',
-    code: `
+  name: "replaceText",
+  code: `
   $replaceText[Monkey;M;D]
-  `
+  `,
 });
 ```
 
@@ -40,10 +40,10 @@ This will replace the word `coffee` two times using the last [field](#parameters
 
 ```javascript
 bot.command({
-    name: 'replaceText',
-    code: `
+  name: "replaceText",
+  code: `
   $replaceText[I love drinking Coffee, Coffee gives me power! Coffee is bad for my health.;Coffee;orange juice;2]
-  `
+  `,
 });
 ```
 
@@ -51,9 +51,9 @@ This will replace `Ferel` and `are` using multiple `$replaceText`:
 
 ```javascript
 bot.command({
-    name: 'replaceText',
-    code: `
+  name: "replaceText",
+  code: `
   $replaceText[$replaceText[Leref and Ferel are the same person.;Ferel;Ayaka];are;are not]
-  `
+  `,
 });
 ```

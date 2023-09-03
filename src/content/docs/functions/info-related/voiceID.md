@@ -24,9 +24,9 @@ This will return your current voice channel ID (if any):
 
 ```javascript
 bot.command({
-    name: 'voiceID',
-    code: `
+  name: "voiceID",
+  code: `
     $voiceID[$authorID]
-  `
+  `,
 });
 ```

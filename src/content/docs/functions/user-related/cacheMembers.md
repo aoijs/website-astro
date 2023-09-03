@@ -25,9 +25,9 @@ This will cache all members of the current guild and return the amount of the ca
 
 ```javascript
 bot.command({
-    name: 'cacheMembers',
-    code: `
+  name: "cacheMembers",
+  code: `
   $cacheMembers[$guildID;true]
-  `
+  `,
 });
 ```

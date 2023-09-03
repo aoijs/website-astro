@@ -26,10 +26,10 @@ This will limit the command only to the listed channels:
 
 ```javascript
 bot.command({
-    name: "onlyForChannels",
-    code: `
+  name: "onlyForChannels",
+  code: `
     Ok.
     $onlyForChannels[channelID;channelID;You can't use that command here!]
-    `
+    `,
 });
 ```

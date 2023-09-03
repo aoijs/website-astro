@@ -24,9 +24,9 @@ This will return `2` as it's the remainder of `5 % 3`:
 
 ```javascript
 bot.command({
-    name: 'modulo',
-    code: `
+  name: "modulo",
+  code: `
   $modulo[5;3]
-  `
+  `,
 });
 ```

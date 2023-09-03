@@ -18,9 +18,9 @@ This will return the last time your bot started/was ready:
 
 ```javascript
 bot.command({
-    name: 'readyTimestamp',
-    code: `
+  name: "readyTimestamp",
+  code: `
   $readyTimestamp
-  `
+  `,
 });
 ```

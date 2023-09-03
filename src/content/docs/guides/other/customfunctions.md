@@ -19,6 +19,7 @@ To begin with, there are two types of custom functions.
 As you may can tell by the name `aoi.js` custom functions include aoi.js functions, on the other side `djs` refers to `discord.js` which means it will create a discord.js custom function using discord.js functions/syntax.
 
 ### Aoi.js Custom Functions
+
 ```js
 bot.functionManager.createFunction({
     name: "$function", // custom function name, can be anything.
@@ -29,7 +30,8 @@ bot.functionManager.createFunction({
 ```
 
 Pretty simple example, and usage.
-* To return any parameter of `params: [...]` you can use `{name}` (name stands for the parameter name).
+
+- To return any parameter of `params: [...]` you can use `{name}` (name stands for the parameter name).
 
 ### Discord.js Custom Functions
 
@@ -62,7 +64,7 @@ bot.functionManager.createFunction({
 You can create error messages like the following;
 
 ```js
-aoiError.fnError(d, type, data, message)
+aoiError.fnError(d, type, data, message);
 ```
 
 | TYPE    | RETURNS                            |
@@ -78,11 +80,12 @@ aoiError.fnError(d, type, data, message)
 | custom  | Given Custom Error Message         |
 
 ```js
-aoiError.consoleError(name, e)
+aoiError.consoleError(name, e);
 ```
 
 ```js
-if (!parameter) return d.aoiError.fnError(d, 'custom', {}, 'Custom Error Message');
+if (!parameter)
+  return d.aoiError.fnError(d, "custom", {}, "Custom Error Message");
 // will return a error message when the parameter "parameter" doesn't have any arguments.
 ```
 
@@ -101,20 +104,20 @@ Difficulty: Beginner
 
 ```js
 bot.functionManager.createFunction({
-  name: "$say", 
+  name: "$say",
   params: ["userID", "message"],
-  type: "aoi.js", 
+  type: "aoi.js",
   code: ` 
     **$userTag[$replaceText[$replaceText[$checkCondition[{userID}==||{userID}==undefined];true;$authorID];false;{userID}]]** says: **{message}**
     $disableMentionType[everyone]
-  ` 
-})
+  `,
+});
 ```
 
 ### Discord.js Custom Functions Examples
 
 ```ts
-$sendImage[URL]
+$sendImage[URL];
 ```
 
 Packages required: `none`  
@@ -124,29 +127,31 @@ Difficulty: Beginner
 bot.functionManager.createFunction({
   name: "$sendImage",
   type: "djs",
-  code: async d => {
+  code: async (d) => {
     const data = d.util.aoiFunc(d);
     const [URL] = data.inside.splits;
 
     let image = URL;
     const a = await d.message.channel.send({
-      files: [{ 
-        attachment: image // set the given URL as attachment.
-        }]
+      files: [
+        {
+          attachment: image, // set the given URL as attachment.
+        },
+      ],
     });
 
     data.result = a;
-     return { 
-        code: d.util.setCode(data) 
-        }
-    }   
+    return {
+      code: d.util.setCode(data),
+    };
+  },
 });
 ```
 
 ---
 
 ```ts
-$imagine[prompt]
+$imagine[prompt];
 ```
 
 Packages required: `openai`  
@@ -154,33 +159,39 @@ Difficulty: Advanced
 
 ```javascript
 bot.functionManager.createFunction({
-  name: '$imagine',
-  type: 'djs',
-  code: async d => {
-  const { Configuration, OpenAIApi } = require("openai");
-  const data = d.util.aoiFunc(d);
-  const [description] = data.inside.splits;
-  if(!description) return d.aoiError.fnError(d, 'custom', {}, 'Missing description to generate a image!');
+  name: "$imagine",
+  type: "djs",
+  code: async (d) => {
+    const { Configuration, OpenAIApi } = require("openai");
+    const data = d.util.aoiFunc(d);
+    const [description] = data.inside.splits;
+    if (!description)
+      return d.aoiError.fnError(
+        d,
+        "custom",
+        {},
+        "Missing description to generate a image!",
+      );
 
-  const config = new Configuration({
-    apiKey: "openAI API key" // required to interact with the API
-  });
-  const openai = new OpenAIApi(config);
-
-  try {
-    const response = await openai.createImage({
-      prompt: description, // get the description from the input $imagine[INPUT]
-      n: 1, // generate one variation.
-      size: "1024x1024",
+    const config = new Configuration({
+      apiKey: "openAI API key", // required to interact with the API
     });
-    data.result = response.data.data[0].URL;
-    return {
-      code: d.util.setCode(data) 
-    };
-  } catch (e) {
-    console.error(e);
-    return d.aoiError.fnError(d, 'custom', {}, 'Couldnt generate image');
-  }
-}
+    const openai = new OpenAIApi(config);
+
+    try {
+      const response = await openai.createImage({
+        prompt: description, // get the description from the input $imagine[INPUT]
+        n: 1, // generate one variation.
+        size: "1024x1024",
+      });
+      data.result = response.data.data[0].URL;
+      return {
+        code: d.util.setCode(data),
+      };
+    } catch (e) {
+      console.error(e);
+      return d.aoiError.fnError(d, "custom", {}, "Couldnt generate image");
+    }
+  },
 });
 ```

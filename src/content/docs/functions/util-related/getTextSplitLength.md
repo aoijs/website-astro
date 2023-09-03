@@ -18,10 +18,10 @@ This will return `5` as there are five arguments separated by commas given in `$
 
 ```javascript
 bot.command({
-    name: 'getTextSplitLength',
-    code: `
+  name: "getTextSplitLength",
+  code: `
   $getTextSplitLength
   $textSplit[Hello, my, name, is, Leref;, ]
-  `
+  `,
 });
 ```

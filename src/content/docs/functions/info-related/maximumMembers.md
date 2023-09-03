@@ -24,9 +24,9 @@ This will return the maximum of members you can have in your guild:
 
 ```javascript
 bot.command({
-    name: 'maximumMembers',
-    code: `
+  name: "maximumMembers",
+  code: `
   You can have: $maximumMembers[$guildID] Members in this guild!
-  `
+  `,
 });
 ```

@@ -27,9 +27,9 @@ custom emoji:
 
 ```javascript
 bot.command({
-    name: 'isCustomEmoji',
-    code: `
+  name: "isCustomEmoji",
+  code: `
   $isCustomEmoji[<:LerefMoney:1003365344724910191>;773352845738115102]
-  `
+  `,
 });
 ```

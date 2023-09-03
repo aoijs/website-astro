@@ -24,9 +24,9 @@ This will return `75` as `70+5` equals `75`:
 
 ```javascript
 bot.command({
-    name: 'sum',
-    code: `
+  name: "sum",
+  code: `
   $sum[70;5]
-  `
+  `,
 });
 ```

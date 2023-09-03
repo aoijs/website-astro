@@ -34,10 +34,10 @@ This will return `#32a852` as `50, 168, 82` is the RGB value of it:
 
 ```javascript
 bot.command({
-    name: 'resolveColor',
-    code: `
+  name: "resolveColor",
+  code: `
   $resolveColor[rgb;decimal;50;168;82]
-  `
+  `,
 });
 ```
 
@@ -45,10 +45,10 @@ This will return `50, 168, 82` as `#32a852` is the hex color of it:
 
 ```javascript
 bot.command({
-    name: 'resolveColor',
-    code: `
+  name: "resolveColor",
+  code: `
   $resolveColor[decimal;rgb;#32a852]
-  `
+  `,
 });
 ```
 
@@ -56,9 +56,9 @@ This will return `3319890` as `#32a852` is the hex color of it:
 
 ```javascript
 bot.command({
-    name: 'resolveColor',
-    code: `
+  name: "resolveColor",
+  code: `
   $resolveColor[decimal;number;#32a852]
-  `
+  `,
 });
 ```

@@ -30,9 +30,9 @@ This will return the content filter level of a specific guild:
 
 ```javascript
 bot.command({
-    name: 'guildContentFilter',
-    code: `
+  name: "guildContentFilter",
+  code: `
   $guildContentFilter[$guildID]
-  `
+  `,
 });
 ```

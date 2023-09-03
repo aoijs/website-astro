@@ -18,9 +18,9 @@ This will return the amount of role mentions in the given text:
 
 ```javascript
 bot.command({
-    name: 'mentionedRolesCount',
-    code: `
+  name: "mentionedRolesCount",
+  code: `
   You have: $mentionedRolesCount role mentions in your message!
-`
+`,
 });
 ```

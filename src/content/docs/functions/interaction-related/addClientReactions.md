@@ -24,10 +24,10 @@ This will add the given emojis to the bot's response ("Hello!"):
 
 ```javascript
 bot.command({
-    name: 'addClientReactions',
-    code: `
+  name: "addClientReactions",
+  code: `
     Hello!
     $addClientReactions[🧡;❤]
-  `
+  `,
 });
 ```

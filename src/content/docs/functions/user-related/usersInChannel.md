@@ -26,9 +26,9 @@ This will return the users connected to a voice channel:
 
 ```javascript
 bot.command({
-    name: 'usersInChannel',
-    code: `
+  name: "usersInChannel",
+  code: `
   $usersInChannel[$voiceID;user;, ]
-  `
+  `,
 });
 ```

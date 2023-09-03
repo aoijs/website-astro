@@ -22,9 +22,9 @@ $noEscapingMessage[args]
 
 ```javascript
 bot.command({
-    name: "noEscapingMessage",
-    code: `
+  name: "noEscapingMessage",
+  code: `
     $noEscapingMessage[1]
-    `
+    `,
 });
 ```

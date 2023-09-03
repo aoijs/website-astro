@@ -25,9 +25,9 @@ This will delete a webhook of your guild:
 
 ```javascript
 bot.command({
-    name: 'deleteWebhook',
-    code: `
+  name: "deleteWebhook",
+  code: `
   $deleteWebhook[webhookID;webhookToken]
-  ` // replace the fields which the actual information.
+  `, // replace the fields which the actual information.
 });
 ```

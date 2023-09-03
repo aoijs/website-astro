@@ -25,9 +25,9 @@ This will return `false` as there are no embeds attached to your message:
 
 ```javascript
 bot.command({
-    name: 'hasEmbeds',
-    code: `
+  name: "hasEmbeds",
+  code: `
   $hasEmbeds[$messageID;$channelID]
-  `
+  `,
 });
 ```

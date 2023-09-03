@@ -26,9 +26,9 @@ the ![emoji](https://cdn.discordapp.com/emojis/1003365344724910191.webp?size=16&
 
 ```javascript
 bot.command({
-    name: 'guildEmojiExists',
-    code: `
+  name: "guildEmojiExists",
+  code: `
   $guildEmojiExists[<:LerefMoney:1003365344724910191>;$guildID]
-  `
+  `,
 });
 ```

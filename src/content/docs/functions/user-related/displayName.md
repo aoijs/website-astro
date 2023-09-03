@@ -26,9 +26,9 @@ This will return your displayName, if you have none then it'll return your Disco
 
 ```javascript
 bot.command({
-    name: 'displayName',
-    code: `
+  name: "displayName",
+  code: `
   $displayName[$guildID;$authorID;true]
-  `
+  `,
 });
 ```

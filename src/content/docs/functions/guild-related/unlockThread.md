@@ -17,7 +17,7 @@ $unlockThread[channelID;threadID;reason?]
 | Field     | Type    | Description                                                   | Required |
 | --------- | ------- | ------------------------------------------------------------- | :------: |
 | channelID | integer | The ID of the channel where the thread is a parent of.        |   true   |
-| threadID  | integer | The ID of the thread which will be unlocked.                    |   true   |
+| threadID  | integer | The ID of the thread which will be unlocked.                  |   true   |
 | reason?   | string  | The reason which will be displayed in the guild's audit logs. |  false   |
 
 ## Example(s)
@@ -26,9 +26,9 @@ This will unlock a given thread:
 
 ```javascript
 bot.command({
-    name: 'unlockThread',
-    code: `
+  name: "unlockThread",
+  code: `
   $unlockThread[$channelID;threadID;Example reason!]
-  `
+  `,
 });
 ```

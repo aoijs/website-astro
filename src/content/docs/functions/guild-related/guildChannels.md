@@ -26,9 +26,9 @@ This will return all channels of your guild:
 
 ```javascript
 bot.command({
-    name: 'guildChannels',
-    code: `
+  name: "guildChannels",
+  code: `
   $guildChannels[$guildID;mention;, ]
-  `
+  `,
 });
 ```

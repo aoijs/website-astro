@@ -26,9 +26,9 @@ This will return the amount of banned users in your guild:
 
 ```javascript
 bot.command({
-    name: 'banCount',
-    code: `
+  name: "banCount",
+  code: `
   $banCount
-  `
+  `,
 });
 ```

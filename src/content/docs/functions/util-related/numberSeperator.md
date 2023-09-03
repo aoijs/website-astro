@@ -25,9 +25,9 @@ This will return `1,000,000`:
 
 ```javascript
 bot.command({
-    name: 'numberSeparator',
-    code: `
+  name: "numberSeparator",
+  code: `
   $numberSeparator[1000000;,]
-  `
+  `,
 });
 ```

@@ -77,10 +77,9 @@ have any of those:
 
 ```javascript
 bot.command({
-    name: 'hasAnyPerm',
-    code: `
+  name: "hasAnyPerm",
+  code: `
   $hasAnyPerm[$guildID;$authorID;kick;managemessages]
-  `
+  `,
 });
 ```
-

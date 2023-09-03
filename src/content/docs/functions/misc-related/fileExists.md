@@ -24,9 +24,9 @@ This will check if a file called `index.js` exists in your directory:
 
 ```javascript
 bot.command({
-    name: "fileExists",
-    code: `
+  name: "fileExists",
+  code: `
   $fileExists[./index.js]
-  `
+  `,
 });
 ```

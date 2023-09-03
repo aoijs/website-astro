@@ -24,10 +24,10 @@ This will delete the array "array":
 
 ```javascript
 bot.command({
-    name: "deleteArray",
-    code: `
+  name: "deleteArray",
+  code: `
   $deleteArray[array]
   $createArray[array;Hello;This;Is;Great]
-  `
+  `,
 });
 ```

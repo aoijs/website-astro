@@ -25,9 +25,9 @@ This will return the image URL of the role icon:
 
 ```javascript
 bot.command({
-    name: 'guildRoleIconURL',
-    code: `
+  name: "guildRoleIconURL",
+  code: `
   $guildRoleIconURL[$guildID;900004369355931729]
-  `
+  `,
 });
 ```

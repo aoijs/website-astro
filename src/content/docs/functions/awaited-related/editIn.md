@@ -25,10 +25,10 @@ This will edit the sent message after five seconds:
 
 ```javascript
 bot.command({
-    name: 'editIn',
-    code: `
+  name: "editIn",
+  code: `
   $editIn[5s;aoi.js is great, don't you agree?;Yes, I do!]
   I'll edit this message in 5 seconds!
-  `
+  `,
 });
 ```

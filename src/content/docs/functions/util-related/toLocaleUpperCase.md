@@ -24,9 +24,9 @@ This will change every first character of a word to uppercase, in this case it w
 
 ```javascript
 bot.command({
-    name: "toLocaleUpperCase",
-    code: `
+  name: "toLocaleUpperCase",
+  code: `
     $toLocaleUpperCase[hello, i'm happy.]
-    `
+    `,
 });
 ```

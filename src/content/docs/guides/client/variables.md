@@ -14,10 +14,10 @@ One way to do this is by using the following code snippet in your main file (usu
 
 ```js
 bot.variables({
-    variableName: boolean,
-    variableName: number,
-    variableName: object,
-    variableName: "string"
+  variableName: boolean,
+  variableName: number,
+  variableName: object,
+  variableName: "string",
 });
 ```
 
@@ -27,12 +27,13 @@ For example:
 
 ```js title="index.js"
 bot.variables({
-    blacklisted: false,
-    money: 0,
-    developers: {},
-    title: "none"
+  blacklisted: false,
+  money: 0,
+  developers: {},
+  title: "none",
 });
 ```
+
 ---
 
 ## Variable Handlers
@@ -44,33 +45,33 @@ Another way to use variables is by using a variable handler, which can help keep
 3. In your main file, add the following code:
 
 ```js
-require('./handler/variables.js')(bot);
+require("./handler/variables.js")(bot);
 ```
 
 4. In the `variables.js` file, create an array of objects, where each object represents a variable name and its corresponding value:
 
 ```js
-module.exports = (bot) => { 
- bot.variables({
+module.exports = (bot) => {
+  bot.variables({
     variableName: boolean,
     variableName: number,
     variableName: object,
-    variableName: "string"
- });
-}
+    variableName: "string",
+  });
+};
 ```
 
 For example:
 
 ```js title="handler/variables.js"
-module.exports = (bot) => { 
- bot.variables({
+module.exports = (bot) => {
+  bot.variables({
     blacklisted: false,
     money: 0,
     developers: {},
-    title: "none"
- }); 
-}
+    title: "none",
+  });
+};
 ```
 
 With these steps, you now have a working variable handler, which can help you keep your code organized and easier to manage.

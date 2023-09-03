@@ -34,7 +34,7 @@ $addButton[index;label;style;customID;disabled?;emoji?]
 | Danger        | 4     | red                      | `$addButton[1;Example Button!;danger;customID;false]`                                       |
 | Link          | 5     | grey, navigates to a URL | `$addButton[1;Example Button!;link;https://discord.gg;false]`                               |
 | Custom Emoji  | any   | any                      | `$addButton[1;Example Button!;link;customID;false;emojiName,emojiID,animated (true/false)]` |
-| Unicode Emoji | any   | any                      | `$addButton[1;Example Button!;link;customID;false;😀]`                                       |
+| Unicode Emoji | any   | any                      | `$addButton[1;Example Button!;link;customID;false;😀]`                                      |
 
 </details>
 
@@ -44,20 +44,21 @@ This adds a primary and link button to the bot's message:
 
 ```javascript
 bot.command({
-    name: 'addButton',
-    code: `
+  name: "addButton",
+  code: `
     Hello!
     $addButton[1;Example Button!;primary;exampleButton;false;💔]
     $addButton[1;Example Button!;link;https://discord.gg;false]
-  `
+  `,
 });
 ```
+
 ```javascript
 bot.interactionCommand({
-    name: 'exampleButton',
-    prototype: 'button',
-    code: `
+  name: "exampleButton",
+  prototype: "button",
+  code: `
     $interactionReply[Awesome Button Interaction!]
-  `
+  `,
 });
 ```

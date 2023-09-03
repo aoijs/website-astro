@@ -18,9 +18,9 @@ This will return your current aoi.js version:
 
 ```javascript
 bot.command({
-    name: "packageVersion",
-    code: `
+  name: "packageVersion",
+  code: `
     $packageVersion
-    `
+    `,
 });
 ```

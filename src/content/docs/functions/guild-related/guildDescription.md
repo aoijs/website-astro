@@ -24,9 +24,9 @@ This will return the description of a specific guild:
 
 ```javascript
 bot.command({
-    name: 'guildDescription',
-    code: `
+  name: "guildDescription",
+  code: `
   $guildDescription[$guildID]
-  `
+  `,
 });
 ```

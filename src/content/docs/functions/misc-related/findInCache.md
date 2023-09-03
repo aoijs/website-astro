@@ -21,4 +21,4 @@ $findInCache[type;name;prop;value;findType?;returnValue?]
 | prop         | string  | Property.                                                                                                                         |   true   |
 | value        | string  | Property value.                                                                                                                   |   true   |
 | findType?    | string  | 1. **includes** <br /> 2. **startsWith** <br /> 3. **endsWith** <br /> 4. **>=**, **==**, **===** (default), **<=**, **<**, **>** |  false   |
-| returnValue? | boolean | 1. **true* <br /> 2. **false**                                                                                                    |  false   |
+| returnValue? | boolean | 1. **true\* <br /> 2. **false\*\*                                                                                                 |  false   |

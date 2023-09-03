@@ -24,9 +24,9 @@ This will return the ID of the server owner where you execute the command in:
 
 ```javascript
 bot.command({
-    name: 'ownerID',
-    code: `
+  name: "ownerID",
+  code: `
   $ownerID[$guildID]
-  `
+  `,
 });
 ```

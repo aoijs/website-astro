@@ -25,9 +25,9 @@ This will return your user ID:
 
 ```javascript
 bot.command({
-    name: "djsEval",
-    code: `
+  name: "djsEval",
+  code: `
   $djsEval[msg.author.id;true]
-  `
+  `,
 });
 ```

@@ -25,9 +25,9 @@ This will either return `idle`, `online`, `invisible` or `dnd` depending on your
 
 ```javascript
 bot.command({
-    name: 'userStatus',
-    code: `
+  name: "userStatus",
+  code: `
   $userStatus[$guildID;$authorID]
-  `
+  `,
 });
 ```

@@ -24,9 +24,9 @@ This will return the channel topic of the channel where you execute the command 
 
 ```javascript
 bot.command({
-    name: 'channelTopic',
-    code: `
+  name: "channelTopic",
+  code: `
   $channelTopic[$channelID]
-  `
+  `,
 });
 ```

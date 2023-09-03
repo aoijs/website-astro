@@ -18,9 +18,9 @@ This will return the amount of arguments in your message, for example, `[prefix]
 
 ```javascript
 bot.command({
-    name: 'argsCount',
-    code: `
+  name: "argsCount",
+  code: `
   $argsCount
-  `
+  `,
 });
 ```

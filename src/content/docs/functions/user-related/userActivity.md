@@ -25,9 +25,9 @@ This will return your current Activity:
 
 ```javascript
 bot.command({
-    name: 'userActivity',
-    code: `
+  name: "userActivity",
+  code: `
   $userActivity[$guildID;$authorID]
-  `
+  `,
 });
 ```

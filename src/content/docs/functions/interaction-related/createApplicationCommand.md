@@ -52,9 +52,9 @@ This will create a slash command without options:
 
 ```js
 bot.command({
-    name: "createApplicationCommand",
-    code: `
-  $createApplicationCommand[$guildID/global;example;slash command description!;true;slash]`
+  name: "createApplicationCommand",
+  code: `
+  $createApplicationCommand[$guildID/global;example;slash command description!;true;slash]`,
 });
 // Will create a slash commands without any user input, you can choose between global/$guildID to create a command globally or only for a specific guild.
 ```

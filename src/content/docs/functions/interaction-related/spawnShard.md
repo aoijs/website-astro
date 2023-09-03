@@ -24,8 +24,8 @@ This will spawn shard `1`:
 
 ```javascript
 bot.command({
-    name: 'spawnShard',
-    code: `
-   $spawnShard[1]`
+  name: "spawnShard",
+  code: `
+   $spawnShard[1]`,
 });
 ```

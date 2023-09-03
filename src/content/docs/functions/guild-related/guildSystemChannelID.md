@@ -24,9 +24,9 @@ This will return the guild's system channel ID:
 
 ```javascript
 bot.command({
-    name: 'guildSystemChannelID',
-    code: `
+  name: "guildSystemChannelID",
+  code: `
   $guildSystemChannelID[$guildID]
-  `
+  `,
 });
 ```

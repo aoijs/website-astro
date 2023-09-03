@@ -2,7 +2,7 @@
 const key = "toc-position";
 let position = { scrollTop: 0 };
 const sidebar = document.querySelector(
-  "#starlight__sidebar > .sidebar-content"
+  "#starlight__sidebar > .sidebar-content",
 );
 
 if (sidebar) {

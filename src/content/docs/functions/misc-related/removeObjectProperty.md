@@ -25,9 +25,9 @@ This will remove `Ferel` from the given object:
 
 ```javascript
 bot.command({
-    name: 'removeObjectProperty',
-    code: `
+  name: "removeObjectProperty",
+  code: `
   $removeObjectProperty[Ferel;{"aoimusic": "ayaka", "leref": "ferel"}]
-  `
+  `,
 });
 ```

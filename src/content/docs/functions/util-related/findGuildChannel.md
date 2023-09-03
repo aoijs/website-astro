@@ -26,9 +26,9 @@ This will return the channel ID of an channel called `#rules`
 
 ```javascript
 bot.command({
-    name: 'findGuildChannel',
-    code: `
+  name: "findGuildChannel",
+  code: `
   $findGuildChannel[rules;false;$guildID]
-  `
+  `,
 });
 ```

@@ -24,9 +24,9 @@ This will return `77` as there are 77 characters in this text:
 
 ```javascript
 bot.command({
-    name: 'charCount',
-    code: `
+  name: "charCount",
+  code: `
   $charCount[aoi.js is one of the simplest and easiest ways to create your own Discord Bot]
-  `
+  `,
 });
 ```

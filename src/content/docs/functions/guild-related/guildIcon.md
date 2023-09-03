@@ -24,9 +24,9 @@ This will return the icon of the guild:
 
 ```javascript
 bot.command({
-    name: 'guildIcon',
-    code: `
+  name: "guildIcon",
+  code: `
   $guildIcon[$guildID]
-  `
+  `,
 });
 ```

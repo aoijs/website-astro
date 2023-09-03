@@ -33,8 +33,8 @@ This will create a new role called "Bird" in the color of red:
 
 ```javascript
 bot.command({
-    name: 'createRole',
-    code: `
-    $createRole[$guildID;false;Bird;FF0000;;false;❤;1;false;sendmessages]`
+  name: "createRole",
+  code: `
+    $createRole[$guildID;false;Bird;FF0000;;false;❤;1;false;sendmessages]`,
 });
 ```

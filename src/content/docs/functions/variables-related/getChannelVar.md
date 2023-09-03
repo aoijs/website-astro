@@ -16,7 +16,7 @@ $getChannelVar[varname;channelID?;table?]
 
 | Field      | Type    | Description     | Required |
 | ---------- | ------- | --------------- | :------: |
-| varname    | string  | Variable name.  |  true    |
+| varname    | string  | Variable name.  |   true   |
 | channelID? | integer | Channel ID.     |  false   |
 | table?     | string  | Variable table. |  false   |
 
@@ -26,9 +26,9 @@ This will return the value of a variable called "Example":
 
 ```javascript
 bot.command({
-    name: "getChannelVar",
-    code: `
+  name: "getChannelVar",
+  code: `
     $getChannelVar[Example;$channelID;main]
-    `
+    `,
 });
 ```

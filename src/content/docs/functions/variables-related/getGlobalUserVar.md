@@ -16,7 +16,7 @@ $getGlobalUserVar[varname;userID?;table?]
 
 | Field   | Type    | Description     | Required |
 | ------- | ------- | --------------- | :------: |
-| varname | string  | Variable name.  |  true    |
+| varname | string  | Variable name.  |   true   |
 | userID? | integer | User ID.        |  false   |
 | table?  | string  | Variable table. |  false   |
 
@@ -26,9 +26,9 @@ This will return the value of a variable called "Example":
 
 ```javascript
 bot.command({
-    name: "getGlobalUserVar",
-    code: `
+  name: "getGlobalUserVar",
+  code: `
     $getGlobalUserVar[Example;$authorID;main]
-    `
+    `,
 });
 ```

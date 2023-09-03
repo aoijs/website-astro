@@ -27,8 +27,8 @@ This will remove a given role from yourself (the role must be below the bot's hi
 
 ```javascript
 bot.command({
-    name: 'removeRole',
-    code: `
-   $removeRole[$guildID;$authorID;roleID;Some reason.]`
+  name: "removeRole",
+  code: `
+   $removeRole[$guildID;$authorID;roleID;Some reason.]`,
 });
 ```

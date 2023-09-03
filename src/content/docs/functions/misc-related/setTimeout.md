@@ -31,16 +31,16 @@ This will send "Hello!" after 10 seconds in the command execution channel:
 
 ```javascript
 bot.command({
-    name: "setTimeout",
-    code: `
+  name: "setTimeout",
+  code: `
     $setTimeout[timeoutCommand;10s;{"channelID": "$channelID", "authorID": "$authorID"};false]
-    `
+    `,
 });
 
 bot.timeoutCommand({
-    name: "timeoutCommand",
-    code: `
+  name: "timeoutCommand",
+  code: `
     $channelSendMessage[$timeoutData[channelID];Hello, <@$timeoutData[authorID]>!]
-    `
+    `,
 });
 ```

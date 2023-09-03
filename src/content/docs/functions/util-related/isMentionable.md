@@ -25,9 +25,9 @@ This will check if a role with the name `Owner` is mentionable and returns eithe
 
 ```javascript
 bot.command({
-    name: 'isMentionable',
-    code: `
+  name: "isMentionable",
+  code: `
   $isMentionable[$findRole[Owner];$guildID]
-  `
+  `,
 });
 ```

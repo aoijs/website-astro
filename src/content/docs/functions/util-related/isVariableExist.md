@@ -25,9 +25,9 @@ This will either true or false depending on if a variable called `Example` exist
 
 ```javascript
 bot.command({
-    name: 'isVariableExist',
-    code: `
+  name: "isVariableExist",
+  code: `
   $isVariableExist[Example;main]
-  `
+  `,
 });
 ```

@@ -25,9 +25,9 @@ This will return a random string of twenty characters:
 
 ```javascript
 bot.command({
-    name: 'randomString',
-    code: `
+  name: "randomString",
+  code: `
   $randomString[20]
-  `
+  `,
 });
 ```

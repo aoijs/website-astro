@@ -24,9 +24,9 @@ This will return the amount of bots in your guild:
 
 ```javascript
 bot.command({
-    name: 'guildBotCount',
-    code: `
+  name: "guildBotCount",
+  code: `
   $guildBotCount
-  `
+  `,
 });
 ```

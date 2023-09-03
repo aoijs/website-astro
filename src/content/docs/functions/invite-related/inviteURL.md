@@ -18,10 +18,10 @@ This will return the invite guild ID of the created invite:
 
 ```javascript
 bot.inviteCreateCommand({
-    name: 'inviteURL',
-    channel: '$channelID',
-    code: `
+  name: "inviteURL",
+  channel: "$channelID",
+  code: `
   $inviteURL
-  `
+  `,
 });
 ```

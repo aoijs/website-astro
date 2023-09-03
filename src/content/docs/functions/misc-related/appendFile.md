@@ -26,9 +26,9 @@ This will add a comment to your main file:
 
 ```javascript
 bot.command({
-    name: 'appendFile',
-    code: `
+  name: "appendFile",
+  code: `
   $appendFile[./index.js;// Hello!]
-  `
+  `,
 });
 ```

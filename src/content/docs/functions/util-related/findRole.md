@@ -25,9 +25,9 @@ This will return the role ID of the role `Owner` if it exists:
 
 ```javascript
 bot.command({
-    name: 'findRole',
-    code: `
+  name: "findRole",
+  code: `
   $findRole[Owner;$guildID]
-  `
+  `,
 });
 ```

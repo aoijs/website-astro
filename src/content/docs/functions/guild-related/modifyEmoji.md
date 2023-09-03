@@ -27,9 +27,9 @@ This will edit a existing emoji / change its name to "Example":
 
 ```javascript
 bot.command({
-    name: 'modifyEmoji',
-    code: `
+  name: "modifyEmoji",
+  code: `
   $modifyEmoji[$guildID;emojiID;Example]
-  `
+  `,
 });
 ```

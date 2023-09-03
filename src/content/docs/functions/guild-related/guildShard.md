@@ -28,9 +28,9 @@ This will return the amount guilds of a shard:
 
 ```javascript
 bot.command({
-    name: 'guildShard',
-    code: `
+  name: "guildShard",
+  code: `
   $guildShard[name;, ;$shardID]
-  `
+  `,
 });
 ```

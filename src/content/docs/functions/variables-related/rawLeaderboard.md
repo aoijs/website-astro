@@ -16,9 +16,9 @@ $rawLeaderboard[variable;order?;type?;custom?;list?;page?;table?]
 
 | Field    | Type   | Description                                                                                               | Required |
 | -------- | ------ | --------------------------------------------------------------------------------------------------------- | :------: |
-| variable | string | Variable name.                                                                                            |  true    |
-| type     | string | Variable type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel**      |  true    |
-| order    | string | In which order it will be returned <br /> 1. **asc** (ascending / default) <br /> 2. **dsc** (descending) |  true    |
+| variable | string | Variable name.                                                                                            |   true   |
+| type     | string | Variable type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel**      |   true   |
+| order    | string | In which order it will be returned <br /> 1. **asc** (ascending / default) <br /> 2. **dsc** (descending) |   true   |
 | custom?  | string | Formatting.                                                                                               |  false   |
 | list?    | number | How many to list.                                                                                         |  false   |
 | page?    | number | Which page to list.                                                                                       |  false   |
@@ -38,9 +38,9 @@ This will return a leaderboard of the "Example" variable:
 
 ```javascript
 bot.command({
-    name: "rawLeaderboard",
-    code: `
+  name: "rawLeaderboard",
+  code: `
     $rawLeaderboard[Example;asc;globalUser;{top} - {username} - {value};10;1;main]
-    `
+    `,
 });
 ```

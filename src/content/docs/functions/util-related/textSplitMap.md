@@ -24,17 +24,17 @@ This will return the arguments within `$textSplit` and send all of them separate
 
 ```javascript
 bot.command({
-    name: "textSplitMap",
-    code: `
+  name: "textSplitMap",
+  code: `
     $textSplitMap[devs]
     $textSplit[Ayaka,Leref,Ferel,Blurr;,]
-    `
+    `,
 });
 
 bot.awaitedCommand({
-    name: "devs",
-    code: `
+  name: "devs",
+  code: `
     $message[1]
-    `
+    `,
 });
 ```

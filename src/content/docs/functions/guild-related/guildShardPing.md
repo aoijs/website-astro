@@ -26,9 +26,9 @@ This will return the shard latency of the current shard:
 
 ```javascript
 bot.command({
-    name: 'guildShardPing',
-    code: `
+  name: "guildShardPing",
+  code: `
   $guildShardPing[$shardId]MS
-  `
+  `,
 });
 ```

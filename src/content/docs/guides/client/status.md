@@ -24,10 +24,10 @@ When you use sharding you can individually change the status of each shard:
 
 ```javascript
 bot.status({
-    text: string,
-    type: string,
-    time: number,
-    shard: number
+  text: string,
+  type: string,
+  time: number,
+  shard: number,
 });
 ```
 
@@ -37,25 +37,25 @@ If you want to have multiple statuses just add multiple `bot.status({...})`, sim
 
 ```javascript title="index.js"
 bot.status({
-    text: "Example Text one!",
-    type: "PLAYING",
-    time: 12
+  text: "Example Text one!",
+  type: "PLAYING",
+  time: 12,
 });
 
 bot.status({
-    text: "Example Text two!",
-    type: "STREAMING",
-    URL: "some URL"
+  text: "Example Text two!",
+  type: "STREAMING",
+  URL: "some URL",
 });
 ```
 
 There are various types of statuses:
 
-* **PLAYING**
-* **WATCHING**
-* **STREAMING**
-* **LISTENING**
-* **COMPETING**
+- **PLAYING**
+- **WATCHING**
+- **STREAMING**
+- **LISTENING**
+- **COMPETING**
 
 ### Client Presence
 
@@ -63,16 +63,16 @@ You can also set the bot's presence, by adding the `status` property, for exampl
 
 ```javascript title="index.js"
 bot.status({
-    text: "Example Text!",
-    type: "PLAYING",
-    status: "dnd",
-    time: 12
+  text: "Example Text!",
+  type: "PLAYING",
+  status: "dnd",
+  time: 12,
 });
 ```
 
 There are multiple types of presences:
 
-> * **online**
-> * **idle**
-> * **dnd** 
-> * **invisible**
+> - **online**
+> - **idle**
+> - **dnd**
+> - **invisible**

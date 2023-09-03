@@ -22,12 +22,12 @@ $interactionDeferUpdate[ephemeral]
 
 ```javascript
 bot.command({
-    name: 'exampleButton',
-    type: 'interaction',
-    prototype: 'button',
-    code: ` 
+  name: "exampleButton",
+  type: "interaction",
+  prototype: "button",
+  code: ` 
    $interactionFollowUp[This is the first message!]
    $interactionEdit[This is the second message!]
-   $interactionDeferUpdate[true]`
+   $interactionDeferUpdate[true]`,
 });
 ```

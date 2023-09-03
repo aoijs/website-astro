@@ -25,9 +25,9 @@ This will deafen yourself:
 
 ```javascript
 bot.command({
-    name: 'deafen',
-    code: `
+  name: "deafen",
+  code: `
   $deafen[$authorID;true]
-  `
+  `,
 });
 ```

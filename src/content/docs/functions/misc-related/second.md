@@ -18,10 +18,10 @@ This will returns the current second:
 
 ```javascript
 bot.command({
-    name: "second",
-    code: `
+  name: "second",
+  code: `
     $second
-    `
+    `,
 });
 ```
 
@@ -29,10 +29,10 @@ You can change the timezone using `$timezone`:
 
 ```javascript
 bot.command({
-    name: "second",
-    code: `
+  name: "second",
+  code: `
     $second 
     $timezone[America/New_York]
-    ` // returns current second in New York
+    `, // returns current second in New York
 });
 ```

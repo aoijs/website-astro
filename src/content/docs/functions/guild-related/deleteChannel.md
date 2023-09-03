@@ -24,9 +24,9 @@ This will delete the channel where the command was executed in:
 
 ```javascript
 bot.command({
-    name: 'deleteChannel',
-    code: `
+  name: "deleteChannel",
+  code: `
   $deleteChannel[$channelID]
-  `
+  `,
 });
 ```

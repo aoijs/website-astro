@@ -24,9 +24,9 @@ This will return a random text out of `Hello, Bye, Goodnight, See you`:
 
 ```javascript
 bot.command({
-    name: 'randomText',
-    code: `
+  name: "randomText",
+  code: `
   $randomText[Hello;Bye;Goodnight;See you]
-  `
+  `,
 });
 ```

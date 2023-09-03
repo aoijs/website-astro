@@ -14,8 +14,8 @@ $channelCategoryID[channelID?]
 
 ## Parameters
 
-| Field      | Type    | Description                                                 | Required |
-| ---------- | ------- | ----------------------------------------------------------- | :------: |
+| Field      | Type    | Description                                                  | Required |
+| ---------- | ------- | ------------------------------------------------------------ | :------: |
 | channelID? | integer | ID of a channel of which you want to retrieve its parent of. |  false   |
 
 ## Example(s)
@@ -24,9 +24,9 @@ This will return the category ID of the text channel in where you execute the co
 
 ```javascript
 bot.command({
-    name: 'channelCategoryID',
-    code: `
+  name: "channelCategoryID",
+  code: `
   $channelCategoryID[$channelID]
-  `
+  `,
 });
 ```

@@ -24,11 +24,11 @@ This will return your current node version:
 
 ```javascript
 bot.command({
-    name: "exec",
-    code: `
+  name: "exec",
+  code: `
     \`\`\`
     $exec[node -v]
     \`\`\`
-  `
+  `,
 });
 ```

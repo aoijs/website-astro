@@ -24,9 +24,9 @@ This will return the widget channel ID of the current guild (if any):
 
 ```javascript
 bot.command({
-    name: 'guildWidgetChannelID',
-    code: `
+  name: "guildWidgetChannelID",
+  code: `
   $guildWidgetChannelID[$guildID]
-  `
+  `,
 });
 ```

@@ -18,9 +18,9 @@ This will return the amount of members in your guild:
 
 ```javascript
 bot.command({
-    name: 'allMembersCount',
-    code: `
+  name: "allMembersCount",
+  code: `
   $allMembersCount
-  `
+  `,
 });
 ```

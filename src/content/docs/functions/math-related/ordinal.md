@@ -22,12 +22,12 @@ $ordinal[number]
 
 ```javascript
 bot.command({
-    name: 'ordinal',
-    code: `
+  name: "ordinal",
+  code: `
   $ordinal[12] -> Returns 12nd 
   $ordinal[50] -> Returns 50th
   $ordinal[11] -> Returns 11st
   $ordinal[88] -> Returns 88th
-  `
+  `,
 });
 ```

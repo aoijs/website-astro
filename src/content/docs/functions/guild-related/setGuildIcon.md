@@ -25,8 +25,8 @@ This will change guild's icon you're executing the command in to your user avata
 
 ```javascript
 bot.command({
-    name: 'setGuildIcon',
-    code: `
-   $setGuildIcon[$userAvatar[$authorID];$guildID]`
+  name: "setGuildIcon",
+  code: `
+   $setGuildIcon[$userAvatar[$authorID];$guildID]`,
 });
 ```

@@ -26,9 +26,9 @@ This will return your permissions:
 
 ```javascript
 bot.command({
-    name: 'userPerms',
-    code: `
+  name: "userPerms",
+  code: `
   $userPerms[$authorID;, ;$guildID]
-  `
+  `,
 });
 ```

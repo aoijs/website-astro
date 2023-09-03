@@ -24,9 +24,9 @@ This will return a random user id:
 
 ```javascript
 bot.command({
-    name: 'randomUserID',
-    code: `
+  name: "randomUserID",
+  code: `
   $randomUserID[global]
-  `
+  `,
 });
 ```

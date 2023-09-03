@@ -38,11 +38,11 @@ This will replace `more` with `less`:
 
 ```javascript
 bot.command({
-    name: 'replaceTextWithRegex',
-    code: `
+  name: "replaceTextWithRegex",
+  code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;more;g;less]
-  `
-});  
+  `,
+});
 ```
 
 ### Advanced Example
@@ -51,9 +51,9 @@ This will replace `less` with `more`:
 
 ```javascript
 bot.command({
-    name: 'replaceTextWithRegex',
-    code: `
+  name: "replaceTextWithRegex",
+  code: `
   $replaceTextWithRegex[This function is more complicated than it looks.;lESs;i;more]
-  `
-});  
+  `,
+});
 ```

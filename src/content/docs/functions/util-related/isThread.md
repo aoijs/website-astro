@@ -24,9 +24,9 @@ This will return either `true` or `false` depending on if you're executing the c
 
 ```javascript
 bot.command({
-    name: 'isThread',
-    code: `
+  name: "isThread",
+  code: `
   $isThread[$channelID]
-  `
+  `,
 });
 ```

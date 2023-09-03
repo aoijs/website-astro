@@ -25,9 +25,9 @@ This will return your join date in MS and parsed date:
 
 ```javascript
 bot.command({
-    name: 'memberJoinDate',
-    code: `
+  name: "memberJoinDate",
+  code: `
   $memberJoinDate[$authorID;$guildID] -> $parseDate[$memberJoinDate[$authorID;$guildID]]
-  `
+  `,
 });
 ```

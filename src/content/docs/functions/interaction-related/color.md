@@ -62,20 +62,20 @@ This will return a red embed:
 
 ```javascript
 bot.command({
-    name: 'color',
-    code: `
+  name: "color",
+  code: `
   $description[What a nice color!]
   $color[Red]
-  `
+  `,
 });
 ```
 
 ```javascript
 bot.command({
-    name: 'color',
-    code: `
+  name: "color",
+  code: `
   $description[What a nice color!]
   $color[ED4245]
-  `
+  `,
 });
 ```

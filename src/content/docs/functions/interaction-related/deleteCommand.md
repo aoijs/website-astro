@@ -18,10 +18,10 @@ This will delete the initial command message:
 
 ```javascript
 bot.command({
-    name: 'deleteCommand',
-    code: `
+  name: "deleteCommand",
+  code: `
   Hello!
   $deleteCommand
-  `
+  `,
 });
 ```

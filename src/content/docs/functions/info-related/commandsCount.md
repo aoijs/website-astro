@@ -18,9 +18,9 @@ This will return the the amount of your commands:
 
 ```javascript
 bot.command({
-    name: 'commandsCount',
-    code: `
+  name: "commandsCount",
+  code: `
   $commandsCount
-  `
+  `,
 });
 ```

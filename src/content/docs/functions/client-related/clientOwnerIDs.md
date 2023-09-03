@@ -14,9 +14,9 @@ $clientOwnerIDs[separator?]
 
 ## Parameters
 
-| Field      | Type   | Description                                   | Required |
-| ---------- | ------ | --------------------------------------------- | :------: |
-| separator? | string | Separator to split user IDs. (default: ` , `) |  false   |
+| Field      | Type   | Description                                 | Required |
+| ---------- | ------ | ------------------------------------------- | :------: |
+| separator? | string | Separator to split user IDs. (default: `,`) |  false   |
 
 ## Example(s)
 
@@ -24,9 +24,9 @@ This will return your user ID most likely:
 
 ```javascript
 bot.command({
-    name: 'clientOwnerIDs',
-    code: `
+  name: "clientOwnerIDs",
+  code: `
   $clientOwnerIDs
-  `
+  `,
 });
 ```

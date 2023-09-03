@@ -18,10 +18,10 @@ This will display your bot as typing and send "Hello!" as message:
 
 ```javascript
 bot.command({
-    name: 'clientTyping',
-    code: `
+  name: "clientTyping",
+  code: `
   Hello!
   $clientTyping
-  `
+  `,
 });
 ```

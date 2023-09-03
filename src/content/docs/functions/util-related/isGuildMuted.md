@@ -25,9 +25,9 @@ This will return either `true` or `false` depending on if you're server muted or
 
 ```javascript
 bot.command({
-    name: 'isGuildMuted',
-    code: `
+  name: "isGuildMuted",
+  code: `
   $isGuildMuted[$authorID;$guildID]
-  `
+  `,
 });
 ```

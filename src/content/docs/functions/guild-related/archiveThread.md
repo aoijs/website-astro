@@ -27,10 +27,10 @@ This will archive the created thread:
 
 ```javascript
 bot.command({
-    name: 'archiveThread',
-    code: `
+  name: "archiveThread",
+  code: `
   $archiveThread[$channelID;$get[id];true;testing]
   $let[id;$createThread[$channelID;example;1440;public;$messageID;true]]  
-  `
+  `,
 });
 ```

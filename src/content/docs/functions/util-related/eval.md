@@ -28,11 +28,11 @@ This will return your user ID:
 
 ```javascript
 bot.command({
-    name: "eval",
-    code: `
+  name: "eval",
+  code: `
     \`\`\`
     $eval[$authorID;true;true;true;true]
     \`\`\`
-  `
+  `,
 });
 ```

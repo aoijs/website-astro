@@ -24,9 +24,9 @@ This will return the channel name of the channel where you executed the command 
 
 ```javascript
 bot.command({
-    name: 'channelName',
-    code: `
+  name: "channelName",
+  code: `
   $channelName[$channelID]
-  `
+  `,
 });
 ```

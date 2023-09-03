@@ -28,8 +28,8 @@ This will change the client's status to **PLAYING** and **online**:
 
 ```javascript
 bot.command({
-    name: 'setStatus',
-    code: `
-   $setStatus[Hello!;PLAYING;online]`
+  name: "setStatus",
+  code: `
+   $setStatus[Hello!;PLAYING;online]`,
 });
 ```

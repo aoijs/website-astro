@@ -24,9 +24,9 @@ This will return your guild banner (if unlocked and using):
 
 ```javascript
 bot.command({
-    name: 'guildBanner',
-    code: `
+  name: "guildBanner",
+  code: `
   $guildBanner[$guildID]
-  `
+  `,
 });
 ```

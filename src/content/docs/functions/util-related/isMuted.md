@@ -25,9 +25,9 @@ This will check if you're currently muted in a voice channel and returns either 
 
 ```javascript
 bot.command({
-    name: 'isMuted',
-    code: `
+  name: "isMuted",
+  code: `
   $isMuted[$authorID;$guildID]
-  `
+  `,
 });
 ```

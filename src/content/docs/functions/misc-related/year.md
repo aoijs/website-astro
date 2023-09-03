@@ -18,10 +18,10 @@ This will returns the current year:
 
 ```javascript
 bot.command({
-    name: "year",
-    code: `
+  name: "year",
+  code: `
     $year
-    `
+    `,
 });
 ```
 
@@ -29,10 +29,10 @@ You can change the timezone using `$timezone`:
 
 ```javascript
 bot.command({
-    name: "year",
-    code: `
+  name: "year",
+  code: `
     $year 
     $timezone[America/New_York]
-    ` // returns current year in New York
+    `, // returns current year in New York
 });
 ```

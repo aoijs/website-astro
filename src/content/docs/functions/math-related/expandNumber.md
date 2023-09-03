@@ -24,8 +24,8 @@ This will return `1300000`:
 
 ```javascript
 bot.command({
-    name: 'expandNumber',
-    code: `
-  $expandNumber[1.3m]`
+  name: "expandNumber",
+  code: `
+  $expandNumber[1.3m]`,
 });
 ```

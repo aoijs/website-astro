@@ -1,23 +1,29 @@
 {
-  "name": "AoiEngine",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "website-astro",
+  "version": "1.0.0",
+  "description": "Offical aoi.js Documentation.",
+  "main": "index.js",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "format": "prettier -w --cache --plugin prettier-plugin-astro .",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "astro preview"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@astrojs/node": "^5.3.6",
-    "@astrojs/react": "^2.3.2",
-    "@astrojs/starlight": "^0.8.0",
-    "@types/react": "^18.2.20",
+    "@astrojs/markdown-remark": "^3.0.0",
+    "@astrojs/node": "^6.0.0",
+    "@astrojs/react": "^3.0.0",
+    "@astrojs/starlight": "^0.9.0",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "astro": "^2.10.5",
+    "astro": "^3.0.7",
+    "prettier-plugin-astro": "^0.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.32.3"
+    "rehype-autolink-headings": "^6.1.1",
+    "sharp": "^0.32.5"
   }
 }

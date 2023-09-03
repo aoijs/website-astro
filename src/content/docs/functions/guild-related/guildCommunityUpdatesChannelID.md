@@ -24,9 +24,9 @@ This will return the community updates channel ID of the current guild (if any):
 
 ```javascript
 bot.command({
-    name: 'guildCommunityUpdatesChannelID',
-    code: `
+  name: "guildCommunityUpdatesChannelID",
+  code: `
   $guildCommunityUpdatesChannelID[$guildID]
-  `
+  `,
 });
 ```

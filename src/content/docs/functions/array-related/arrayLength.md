@@ -22,10 +22,10 @@ $arrayLength[name]
 
 ```javascript
 bot.command({
-    name: "array-length",
-    code: `
+  name: "array-length",
+  code: `
   $arrayLength[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

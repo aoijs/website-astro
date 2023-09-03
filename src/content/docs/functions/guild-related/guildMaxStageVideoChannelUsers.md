@@ -24,9 +24,9 @@ This will return the max amount of stage video channel users of the current guil
 
 ```javascript
 bot.command({
-    name: 'guildMaxStageVideoChannelUsers',
-    code: `
+  name: "guildMaxStageVideoChannelUsers",
+  code: `
   $guildMaxStageVideoChannelUsers[$guildID]
-  `
+  `,
 });
 ```

@@ -25,14 +25,14 @@ ID ):
 
 ```javascript
 bot.command({
-    name: 'addApplicationCommandPermissions',
-    code: `
+  name: "addApplicationCommandPermissions",
+  code: `
     $addApplicationCommandPermissions[$guildID;ID;[
   {
     id: '$guildID',
     type: 'ROLE',
     permission: false
   }
-]]`
+]]`,
 });
 ```

@@ -27,11 +27,11 @@ This will add and remove the bot's reaction after two seconds:
 
 ```javascript
 bot.command({
-    name: 'clearReaction',
-    code: `
+  name: "clearReaction",
+  code: `
   $clearReaction[$channelID;$messageID;$clientID;🥱]
   $wait[2s]
   $addCmdReactions[🥱]
-  `
+  `,
 });
 ```

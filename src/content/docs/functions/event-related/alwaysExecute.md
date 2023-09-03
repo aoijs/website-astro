@@ -19,6 +19,6 @@ This will send the given message each time you send a message:
 ```javascript
 bot.command({
   name: "$alwaysExecute",
-  code: `Hello!`
-})
+  code: `Hello!`,
+});
 ```

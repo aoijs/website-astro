@@ -26,9 +26,9 @@ This will add the given reactions to your message:
 
 ```javascript
 bot.command({
-    name: 'addMessageReactions',
-    code: `
+  name: "addMessageReactions",
+  code: `
  $addMessageReactions[$channelID;$messageID;✅;❌]
-  `
+  `,
 });
 ```

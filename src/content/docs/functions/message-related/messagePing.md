@@ -18,9 +18,9 @@ This will return the latency of your message:
 
 ```javascript
 bot.command({
-    name: 'messagePing',
-    code: `
+  name: "messagePing",
+  code: `
   $messagePing
-  `
+  `,
 });
 ```

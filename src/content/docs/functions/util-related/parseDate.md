@@ -32,9 +32,9 @@ This will return your current date in the `date` [format](#types):
 
 ```javascript
 bot.command({
-    name: 'parseDate',
-    code: `
+  name: "parseDate",
+  code: `
   $parseDate[$dateStamp;date]
-  `
+  `,
 });
 ```

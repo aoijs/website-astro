@@ -24,10 +24,10 @@ This will return the CPU usage of your bot:
 
 ```javascript
 bot.command({
-    name: 'cpu',
-    code: `
+  name: "cpu",
+  code: `
   OS: $cpu[os] 
   Process: $cpu[process] 
-  `
+  `,
 });
 ```

@@ -24,9 +24,9 @@ This will return `775` and remove `.9723` from the given value:
 
 ```javascript
 bot.command({
-    name: 'truncate',
-    code: `
+  name: "truncate",
+  code: `
   $truncate[775.9723]
-  `
+  `,
 });
 ```

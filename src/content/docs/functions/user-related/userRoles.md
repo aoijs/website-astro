@@ -27,9 +27,9 @@ This will return your roles:
 
 ```javascript
 bot.command({
-    name: 'userRoles',
-    code: `
+  name: "userRoles",
+  code: `
   $userRoles[$authorID;$guildID;id;, ]
-  `
+  `,
 });
 ```

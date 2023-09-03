@@ -24,9 +24,9 @@ This will return your main file (index.js):
 
 ```javascript
 bot.command({
-    name: "readFile",
-    code: `
+  name: "readFile",
+  code: `
     $readFile[./index.js]
-    `
+    `,
 });
 ```

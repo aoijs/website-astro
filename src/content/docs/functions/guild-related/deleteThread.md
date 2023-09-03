@@ -27,9 +27,9 @@ thread ID ):
 
 ```javascript
 bot.command({
-    name: 'deleteThread',
-    code: `
+  name: "deleteThread",
+  code: `
   $deleteThread[$channelID;threadID;Crazy Example.]
-  `
+  `,
 });
 ```

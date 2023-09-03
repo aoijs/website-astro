@@ -26,9 +26,9 @@ This will return your profile picture:
 
 ```javascript
 bot.command({
-    name: 'authorAvatar',
-    code: `
+  name: "authorAvatar",
+  code: `
   $authorAvatar[2048;true;webp]
-  `
+  `,
 });
 ```

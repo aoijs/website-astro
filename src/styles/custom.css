@@ -40,7 +40,7 @@ code {
   border-radius: 7px;
 }
 
-.header:where(.astro-2GH5JEOH) {
+.header:where(.astro-2gh5jeoh) {
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(12px);
   background-color: transparent;
@@ -51,18 +51,14 @@ code {
 }
 
 /* Theme Component */
-.astro-4YPHTOEN {
+.astro-4yphtoen {
   border-radius: 6px;
   transition: border-color 0.3s;
   border-bottom: 1px solid transparent;
 }
 
-.astro-4YPHTOEN:focus {
+.astro-4yphtoen:focus {
   outline: none;
-}
-
-.astro-4YPHTOEN:hover {
-  border-bottom: 1px solid #c7d2fe;
 }
 
 /* Copy button for ALL codeblocks (important) */
@@ -75,5 +71,47 @@ code {
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   user-select: none;
-  transition: all 0.3 ease-in;
+  transition: all 0.3s ease-in;
+}
+
+/* Custom Header Link */
+
+.heading-link::after {
+  content: "#";
+  padding-inline-start: 0.25em;
+  opacity: 0;
+  transition: all 0.3;
+}
+
+.heading-link:hover::after {
+  color: var(--sl-color-text-accent);
+  transition: all 0.3;
+  opacity: 1;
+}
+
+.heading-link {
+  text-decoration: none;
+  color: var(--sl-color-white) !important;
+}
+
+/* Improved Sidebar */
+
+summary:where(.astro-3ii7xxms):hover,
+a:where(.large):hover {
+  border-radius: 0.25rem;
+  background-color: var(--sl-color-gray-3);
+}
+
+/* custom links */
+
+a:where(.linkStyle) {
+  text-decoration: none;
+  display: inline;
+  margin-right: 5px;
+}
+
+.content:where(.astro-ml6ntd6l)
+  :is(img, picture, video, canvas, svg, iframe):not(:where(.not-content *)) {
+  display: inline-block;
+  margin-left: 0.2rem;
 }

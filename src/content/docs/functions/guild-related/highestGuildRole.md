@@ -25,9 +25,9 @@ This will return the name of the highest role of your guild:
 
 ```javascript
 bot.command({
-    name: 'guildHighestRole',
-    code: `
+  name: "guildHighestRole",
+  code: `
   $guildHighestRole[$guildID;name]
-  `
+  `,
 });
 ```

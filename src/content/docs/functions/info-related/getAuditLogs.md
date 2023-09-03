@@ -91,16 +91,15 @@ $getAuditLogs[guildID;userID?;limit?;action?;format?]
 | AutoModerationFlagToChannel             |  144  | Message was flagged by Auto Moderation                    |                            |
 | AutoModerationUserCommunicationDisabled |  145  | Member was timed out by Auto Moderation                   |                            |
 
-
 ## Example(s)
 
 This will return your latest bans (which are logged in audit logs):
 
 ```javascript
 bot.command({
-    name: 'getAuditLogs',
-    code: `
+  name: "getAuditLogs",
+  code: `
   $getAuditLogs[$guildID;$authorID;5;$authorID;12;{executor.username}: {target.id} - {action}]
-  `
+  `,
 });
 ```

@@ -25,9 +25,9 @@ This will check if you're currently using the video feature in a voice channel:
 
 ```javascript
 bot.command({
-    name: 'isVideoOn',
-    code: `
+  name: "isVideoOn",
+  code: `
   $isVideoOn[$authorID;$guildID]
-  `
+  `,
 });
 ```

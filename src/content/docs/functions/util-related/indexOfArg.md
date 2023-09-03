@@ -25,9 +25,9 @@ This will return `3` as `great` is the third argument in the query:
 
 ```javascript
 bot.command({
-    name: 'indexOfArgs',
-    code: `
+  name: "indexOfArgs",
+  code: `
   $indexOfArgs[aoi.js is great for users who are new to Discord's API!;great]
-  `
+  `,
 });
 ```

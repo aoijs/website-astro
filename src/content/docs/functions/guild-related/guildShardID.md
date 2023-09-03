@@ -20,9 +20,9 @@ This will return the current shard ID:
 
 ```javascript
 bot.command({
-    name: 'guildShardID',
-    code: `
+  name: "guildShardID",
+  code: `
   I'm currently on shard $guildShardID!
-  `
+  `,
 });
 ```

@@ -25,16 +25,16 @@ This will change a random role's color to red:
 
 ```javascript
 bot.command({
-    name: 'setRoleColor',
-    code: `
-   $setRoleColor[$randomRoleID;Red]`
+  name: "setRoleColor",
+  code: `
+   $setRoleColor[$randomRoleID;Red]`,
 });
 ```
 
 ```javascript
 bot.command({
-    name: 'setRoleColor',
-    code: `
-   $setRoleColor[$randomRoleID;ED4245]`
+  name: "setRoleColor",
+  code: `
+   $setRoleColor[$randomRoleID;ED4245]`,
 });
 ```

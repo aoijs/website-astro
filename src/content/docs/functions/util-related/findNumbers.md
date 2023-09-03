@@ -24,9 +24,9 @@ This will return `25` and remove `Hello, I'm [..] years old` from the given text
 
 ```javascript
 bot.command({
-    name: 'findNumbers',
-    code: `
+  name: "findNumbers",
+  code: `
   $findNumbers[Hello, I'm 25 years old]
-  `
+  `,
 });
 ```

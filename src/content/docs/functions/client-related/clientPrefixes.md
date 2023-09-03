@@ -18,9 +18,9 @@ This will return all your prefixes separated by a comma (`, `):
 
 ```javascript
 bot.command({
-    name: 'clientPrefixes',
-    code: `
+  name: "clientPrefixes",
+  code: `
   $clientPrefixes
-  `
+  `,
 });
 ```

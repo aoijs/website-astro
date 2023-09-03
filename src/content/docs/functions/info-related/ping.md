@@ -18,9 +18,9 @@ This will return your bot's latency in MS:
 
 ```javascript
 bot.command({
-    name: 'ping',
-    code: `
+  name: "ping",
+  code: `
   My ping is: $pingMS!
-  `
+  `,
 });
 ```

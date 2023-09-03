@@ -18,9 +18,9 @@ This will return your user ID:
 
 ```javascript
 bot.command({
-    name: 'authorID',
-    code: `
+  name: "authorID",
+  code: `
   $authorID
-  `
+  `,
 });
 ```

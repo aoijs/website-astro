@@ -24,9 +24,9 @@ This will return either `true` or `false` depending on if your Direct Messages a
 
 ```javascript
 bot.command({
-    name: 'isUserDmEnabled',
-    code: `
+  name: "isUserDmEnabled",
+  code: `
   $isUserDmEnabled[$authorID]
-  `
+  `,
 });
 ```

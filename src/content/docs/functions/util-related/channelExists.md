@@ -24,9 +24,9 @@ This will check if a channel with the name `general` exists, alternatively you c
 
 ```javascript
 bot.command({
-    name: 'channelExists',
-    code: `
+  name: "channelExists",
+  code: `
   $channelExists[general]
-  `
+  `,
 });
 ```

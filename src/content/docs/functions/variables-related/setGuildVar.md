@@ -16,8 +16,8 @@ $setGuildVar[varname;value;guildID?;table?]
 
 | Field    | Type    | Description         | Required |
 | -------- | ------- | ------------------- | :------: |
-| varname  | string  | Variable name.      |  true    |
-| value    | string  | New Variable value. |  true    |
+| varname  | string  | Variable name.      |   true   |
+| value    | string  | New Variable value. |   true   |
 | guildID? | integer | Guild ID.           |  false   |
 | table?   | string  | Variable table.     |  false   |
 
@@ -27,9 +27,9 @@ This will change the value of "Example" to "This is a value":
 
 ```javascript
 bot.command({
-    name: "setGuildVar",
-    code: `
+  name: "setGuildVar",
+  code: `
     $setGuildVar[Example;This is a value;$guildID;main]
-    `
+    `,
 });
 ```

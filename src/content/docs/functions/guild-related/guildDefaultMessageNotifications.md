@@ -1,5 +1,5 @@
 ---
-title: $guildDefaultMessageNotifications  
+title: $guildDefaultMessageNotifications
 description: $guildDefaultMessageNotifications will return given guild's default message notification type.
 id: guildDefaultMessageNotifications
 ---
@@ -24,9 +24,9 @@ This will return the guild's default message notification type:
 
 ```javascript
 bot.command({
-    name: 'guildDefaultMessageNotifications',
-    code: `
+  name: "guildDefaultMessageNotifications",
+  code: `
   $guildDefaultMessageNotifications
-  `
+  `,
 });
 ```

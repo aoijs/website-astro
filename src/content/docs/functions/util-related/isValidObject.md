@@ -24,9 +24,9 @@ This will return `true` as the given object is a valid JSON object:
 
 ```javascript
 bot.command({
-    name: 'isValidObject',
-    code: `
+  name: "isValidObject",
+  code: `
   $isValidObject[{"name":"Leref", "aoijs":"nice"}]
-  `
+  `,
 });
 ```

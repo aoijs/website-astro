@@ -24,9 +24,9 @@ This will return the ID of the guild's rules channel (community guilds only):
 
 ```javascript
 bot.command({
-    name: 'guildRulesChannelID',
-    code: `
+  name: "guildRulesChannelID",
+  code: `
   $guildRulesChannelID[$guildID]
-  `
+  `,
 });
 ```

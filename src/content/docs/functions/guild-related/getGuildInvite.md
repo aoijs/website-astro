@@ -35,10 +35,10 @@ This will create an invite of the channel where the command is executed in:
 
 ```javascript
 bot.command({
-    name: 'getGuildInvite',
-    code: `
+  name: "getGuildInvite",
+  code: `
   $getGuildInvite[$guildID]
-  `
+  `,
 });
 ```
 
@@ -48,14 +48,14 @@ Create Temporary Invites with limited uses:
 
 ```javascript
 bot.command({
-    name: 'getGuildInvite',
-    code: `
+  name: "getGuildInvite",
+  code: `
   $getGuildInvite[$guildID;{
             "temporary": true,
             "maxAge": 650,
             "maxUses": 25,
             "unique": true
   }]
-  `
+  `,
 });
 ```

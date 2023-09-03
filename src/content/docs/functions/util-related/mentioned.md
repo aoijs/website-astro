@@ -26,9 +26,9 @@ return your ID:
 
 ```javascript
 bot.command({
-    name: 'mentioned',
-    code: `
+  name: "mentioned",
+  code: `
   $mentioned[1;true]
-  `
+  `,
 });
 ```

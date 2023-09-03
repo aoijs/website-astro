@@ -24,9 +24,9 @@ This will everything given to lowercase, in this case it would return `aoi.js is
 
 ```javascript
 bot.command({
-    name: "toLowerCase",
-    code: `
+  name: "toLowerCase",
+  code: `
     $toLowerCase[AOI.JS IS GREAT.]
-    `
+    `,
 });
 ```

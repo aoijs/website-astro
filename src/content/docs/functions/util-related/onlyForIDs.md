@@ -25,10 +25,10 @@ This will limit the command to bot developers only:
 
 ```javascript
 bot.command({
-    name: "onlyForIDs",
-    code: `
+  name: "onlyForIDs",
+  code: `
     Ok.
     $onlyForIDs[$botOwnerID;You can't use that command!]
-    `
+    `,
 });
 ```

@@ -24,9 +24,9 @@ This will return your username and discriminator:
 
 ```javascript
 bot.command({
-    name: 'userTag',
-    code: `
+  name: "userTag",
+  code: `
   $userTag[$authorID]
-  `
+  `,
 });
 ```

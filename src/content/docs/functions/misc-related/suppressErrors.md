@@ -24,10 +24,10 @@ This will suppress all errors of your code and return the pre-defined error mess
 
 ```javascript
 bot.command({
-    name: "suppressErrors",
-    code: `
+  name: "suppressErrors",
+  code: `
     $description
     $suppressErrors[Something went wrong!]
-    ` // Intentional invalid usage of $description
+    `, // Intentional invalid usage of $description
 });
 ```

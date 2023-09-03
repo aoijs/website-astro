@@ -25,9 +25,9 @@ This will return the ban reason of whoever you'd like:
 
 ```javascript
 bot.command({
-    name: 'getBanReason',
-    code: `
+  name: "getBanReason",
+  code: `
   $getBanReason[$guildID;userID] 
-  ` // make sure to replace "userID" with an actual user ID
+  `, // make sure to replace "userID" with an actual user ID
 });
 ```

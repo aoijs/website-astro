@@ -25,9 +25,9 @@ This will return the ID of a webhook, make sure to replace "messageID" with an a
 
 ```javascript
 bot.command({
-    name: 'messageWebhookID',
-    code: `
+  name: "messageWebhookID",
+  code: `
   $messageWebhookID[messageID;$channelID] //replace messageID
-  `
+  `,
 });
 ```

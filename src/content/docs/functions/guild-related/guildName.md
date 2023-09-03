@@ -24,9 +24,9 @@ This will return the name of your guild:
 
 ```javascript
 bot.command({
-    name: 'guildName',
-    code: `
+  name: "guildName",
+  code: `
   $guildName[$guildID]
-  `
+  `,
 });
 ```

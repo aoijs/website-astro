@@ -24,9 +24,9 @@ This will return `<:LerefMoney:1003365344724910191>`:
 
 ```javascript
 bot.command({
-    name: 'resolveEmojiID',
-    code: `
+  name: "resolveEmojiID",
+  code: `
   $resolveEmojiID[LerefMoney]
-  `
+  `,
 });
 ```

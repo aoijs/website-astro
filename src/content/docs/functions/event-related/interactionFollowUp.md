@@ -27,11 +27,11 @@ $interactionFollowUp[content?;embeds?;components?;files?;ephemeral?]
 
 ```javascript
 bot.interactionCommand({
-    name: "interactionFollowUp",
-    prototype: "slash",
-    code: `
+  name: "interactionFollowUp",
+  prototype: "slash",
+  code: `
   $interactionFollowUp[Bye, world!]
   $interactionDefer[true]
-  `
+  `,
 });
 ```

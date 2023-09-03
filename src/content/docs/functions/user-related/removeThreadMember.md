@@ -27,9 +27,9 @@ This will remove the command author from a given thread:
 
 ```javascript
 bot.command({
-    name: 'removeThreadMember',
-    code: `
+  name: "removeThreadMember",
+  code: `
    $removeThreadMember[$channelID;threadID;$authorID;Testing functions!]
-  `
+  `,
 });
 ```

@@ -26,9 +26,9 @@ This will return `true` when the user has any of the listed roles:
 
 ```javascript
 bot.command({
-    name: 'hasAnyRole',
-    code: `
+  name: "hasAnyRole",
+  code: `
   $hasAnyRole[$guildID;$authorID;$findRole[Owner];$findRole[Admin]]
-  `
+  `,
 });
 ```

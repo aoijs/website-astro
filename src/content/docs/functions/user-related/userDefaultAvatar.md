@@ -14,9 +14,9 @@ $userDefaultAvatar[userID?]
 
 ## Parameters
 
-| Field    | Type           | Description                               | Required |
-| -------- | -------------- | ----------------------------------------- | :------: |
-| userID?  | integer        | The ID of the user.                       |  false   |
+| Field   | Type    | Description         | Required |
+| ------- | ------- | ------------------- | :------: |
+| userID? | integer | The ID of the user. |  false   |
 
 ## Example(s)
 
@@ -24,9 +24,9 @@ This will return your default Discord User Avatar:
 
 ```javascript
 bot.command({
-    name: 'userDefaultAvatar',
-    code: `
+  name: "userDefaultAvatar",
+  code: `
   $userDefaultAvatar[$authorID]
-  `
+  `,
 });
 ```

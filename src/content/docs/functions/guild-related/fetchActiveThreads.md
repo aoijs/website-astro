@@ -25,9 +25,9 @@ This will return all active threads, if any:
 
 ```javascript
 bot.command({
-    name: 'fetchActiveThreads',
-    code: `
+  name: "fetchActiveThreads",
+  code: `
   $fetchActiveThreads[$channelID;name]
-  `
+  `,
 });
 ```

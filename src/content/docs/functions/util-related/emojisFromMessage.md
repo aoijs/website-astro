@@ -20,9 +20,9 @@ This will return any emojis you give as argument:
 
 ```javascript
 bot.command({
-    name: 'emojisFromMessage',
-    code: `
+  name: "emojisFromMessage",
+  code: `
 $emojisFromMessage
-  `
+  `,
 });
 ```

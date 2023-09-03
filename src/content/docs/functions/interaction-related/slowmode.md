@@ -27,9 +27,9 @@ This will change the channel's slowmode to three minutes:
 
 ```javascript
 bot.command({
-    name: 'slowmode',
-    code: `
-   $slowmode[3m;$channelID]`
+  name: "slowmode",
+  code: `
+   $slowmode[3m;$channelID]`,
 });
 ```
 
@@ -37,8 +37,8 @@ This will change the channel's slowmode to 6 hours:
 
 ```javascript
 bot.command({
-    name: 'slowmode',
-    code: `
-   $slowmode[6h;$channelID]`
+  name: "slowmode",
+  code: `
+   $slowmode[6h;$channelID]`,
 });
 ```

@@ -25,10 +25,10 @@ This will encode a given text:
 
 ```javascript
 bot.command({
-    name: 'encode',
-    code: `
+  name: "encode",
+  code: `
   $uri[aoi.js is great :);encode]
-  `
+  `,
 });
 ```
 
@@ -36,9 +36,9 @@ This will decode a given text:
 
 ```javascript
 bot.command({
-    name: 'decode',
-    code: `
+  name: "decode",
+  code: `
   $uri[aoi.js%20is%20great%20%3A);decode]
-  `
+  `,
 });
 ```

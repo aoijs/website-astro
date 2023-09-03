@@ -22,10 +22,10 @@ $arrayShift[name]
 
 ```javascript
 bot.command({
-    name: "array-shift",
-    code: `
+  name: "array-shift",
+  code: `
   $arrayShift[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

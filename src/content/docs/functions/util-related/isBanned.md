@@ -25,9 +25,9 @@ This will return `false` as you're not banned in this guild:
 
 ```javascript
 bot.command({
-    name: 'isBanned',
-    code: `
+  name: "isBanned",
+  code: `
   $isBanned[$guildID;$authorID]
-  `
+  `,
 });
 ```

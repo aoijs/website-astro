@@ -24,9 +24,9 @@ This will check if the current channel is a ticket channel created by `$newTicke
 
 ```javascript
 bot.command({
-    name: "isTicket",
-    code: `
+  name: "isTicket",
+  code: `
     $isTicket[$channelID]
-    `
+    `,
 });
 ```

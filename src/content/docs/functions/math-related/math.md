@@ -14,9 +14,9 @@ $math[equation]
 
 ## Parameters
 
-| Field    | Type   |     Description      | Required |
-| -------- | ------ | :------------------: | :------: |
-| equation | string | Calculation (/*-+()) |   true   |
+| Field    | Type   |      Description      | Required |
+| -------- | ------ | :-------------------: | :------: |
+| equation | string | Calculation (/\*-+()) |   true   |
 
 ## Example(s)
 
@@ -24,9 +24,9 @@ This will return `205` as `15+5/2*26+(5+120)` equals it:
 
 ```javascript
 bot.command({
-    name: 'math',
-    code: `
+  name: "math",
+  code: `
   $math[15+5/2*26+(5+120)]
-  `
+  `,
 });
 ```

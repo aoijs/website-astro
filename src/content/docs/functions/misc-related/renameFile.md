@@ -25,9 +25,9 @@ This will change your index.js to a index.txt file:
 
 ```javascript
 bot.command({
-    name: "renameFile",
-    code: `
+  name: "renameFile",
+  code: `
     $renameFile[./index.js;./index.txt]
-    `
+    `,
 });
 ```

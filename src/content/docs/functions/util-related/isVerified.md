@@ -24,9 +24,9 @@ This will check if your server is verified and return either `true` or `false`:
 
 ```javascript
 bot.command({
-    name: 'isVerified',
-    code: `
+  name: "isVerified",
+  code: `
   $isVerified[$guildID]
-  `
+  `,
 });
 ```

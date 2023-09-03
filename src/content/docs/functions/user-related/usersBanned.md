@@ -27,9 +27,9 @@ This will return the banned users of your guild as mention in an embed:
 
 ```javascript
 bot.command({
-    name: 'usersBanned',
-    code: `
+  name: "usersBanned",
+  code: `
 $description[$usersBanned[$guildID;false;mention;, ]]
-  `
+  `,
 });
 ```

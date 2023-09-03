@@ -22,11 +22,11 @@ $arrayShuffle[name]
 
 ```javascript
 bot.command({
-    name: "array-shuffle",
-    code: `
+  name: "array-shuffle",
+  code: `
   $arrayJoin[array;, ]
   $arrayShuffle[array]
   $createArray[array;aoi.js;akarui;documents;bot]
-  `
+  `,
 });
 ```

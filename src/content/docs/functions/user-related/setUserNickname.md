@@ -26,9 +26,9 @@ This will change your nickname to "I love aoi.js": (wont work if you're the guil
 
 ```javascript
 bot.command({
-    name: 'setUserNickname',
-    code: `
+  name: "setUserNickname",
+  code: `
   $setUserNickname[$authorID;I love aoi.js;They simply love aoi.js]
-  `
+  `,
 });
 ```
