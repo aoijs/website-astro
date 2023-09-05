@@ -30,6 +30,22 @@ export default defineConfig({
             defer: true,
           },
         },
+        {
+					tag: 'meta',
+					attrs: { property: 'og:site_name', content: "aoi.js | Akarui Development" },
+				},
+        {
+					tag: 'meta',
+					attrs: { property: 'og:image', content: site + "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'twitter:image', content: "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
+				},
+        {
+					tag: 'meta',
+					attrs: { property: 'color', content: "#b2c6e2" },
+				},
       ],
       sidebar: [
         {

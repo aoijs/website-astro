@@ -44,6 +44,7 @@ code {
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(12px);
   background-color: transparent;
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .sl-banner {
