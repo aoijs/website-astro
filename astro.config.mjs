@@ -36,7 +36,7 @@ export default defineConfig({
 				},
         {
 					tag: 'meta',
-					attrs: { property: 'og:image', content: site + "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
+					attrs: { property: 'og:image', content: "https://raw.githubusercontent.com/aoijs/website/master/assets/images/aoijs-banner.png" },
 				},
 				{
 					tag: 'meta',
@@ -44,7 +44,7 @@ export default defineConfig({
 				},
         {
 					tag: 'meta',
-					attrs: { property: 'color', content: "#b2c6e2" },
+					attrs: { property: 'color', content: "#89CFF0" },
 				},
       ],
       sidebar: [

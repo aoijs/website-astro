@@ -17,13 +17,18 @@ hero:
   image:
     file: /favicon.png
   actions:
-    - text: Guides
+    - text: Getting Started
       link: guides/setup
       icon: right-arrow
+      variant: primary
+    - text: "Extensions"
+      link: extensions/
+      icon: bars
       variant: primary
     - text: "Need support? Join our Discord!"
       link: invite/
       icon: external
+      variant: secondary
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
@@ -47,11 +52,11 @@ import { Icon } from "@astrojs/starlight/components";
     wide range of functionalities to enhance your bot's capabilities.
   </Card>
   <Card title="Built-in Custom Local Database" icon="document">
-    aoi.js provides a powerful custom local database, <a class="linkStyle" href="/extensions">aoi.db<Icon name="external" size="1rem" /></a>. This database allows you to store and retrieve data with ease, making it
+    aoi.js provides a powerful custom local database, <a class="linkStyle" href="extensions/">aoi.db<Icon name="external" size="1rem" /></a>. This database allows you to store and retrieve data with ease, making it
     convenient for managing and persisting bot-related information
   </Card>
   <Card title="Extensions for Added Functionality" icon="puzzle">
-    aoi.js offers extensions like <a class="linkStyle" href="/extensions">aoi.music<Icon name="external" size="1rem" /></a> and <a class="linkStyle" href="/extensions">aoi.panel<Icon name="external" size="1rem" /></a> to enhance your bot's capabilities. These extensions make it simple to add
+    aoi.js offers extensions like <a class="linkStyle" href="extensions/">aoi.music<Icon name="external" size="1rem" /></a> and <a class="linkStyle" href="extensions/">aoi.panel<Icon name="external" size="1rem" /></a> to enhance your bot's capabilities. These extensions make it simple to add
     features like music playback and a customizable web dashboard for managing
     your bot.
   </Card>
