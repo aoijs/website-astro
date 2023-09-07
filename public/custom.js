@@ -47,8 +47,8 @@ for (let codeBlock of codeBlocks) {
   let wrapper = document.createElement("div");
   wrapper.style.position = "relative";
   let copyButton = document.createElement("div");
-  copyButton.className = "copy-code";
-  copyButton.innerHTML = `<img src="/website-astro/icons/copy.png">`;
+  copyButton.className = "copy-button";
+  copyButton.innerHTML = `Copy`;
 
   copyButton.addEventListener("click", async () => {
     await copyCode(codeBlock, copyButton);
@@ -62,8 +62,10 @@ async function copyCode(block, button) {
   let code = block.querySelector("code");
   let text = code.innerText;
   await navigator.clipboard.writeText(text);
-  button.innerHTML = `<img src="/website-astro/icons/check.png">`;
+  button.innerHTML = `Copied!`;
+  button.disabled = true;
   setTimeout(() => {
-    button.innerHTML = `<img src="/website-astro/icons/copy.png">`;
-  }, 700);
+    button.innerHTML = `Copy`;
+    button.disabled = false;
+  }, 4000);
 }

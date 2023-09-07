@@ -63,16 +63,23 @@ code {
 }
 
 /* Copy button for ALL codeblocks (important) */
-.copy-code {
+
+.copy-button {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translateY(25%);
   background-color: transparent;
+  border: #585858 solid 0.1rem;
+  border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   user-select: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.copy-button:hover {
+  border: #c2c2c2 solid 0.11rem;
+  transition: all 0.1s ease-in;
 }
 
 /* Custom Header Link */
@@ -93,14 +100,6 @@ code {
 .heading-link {
   text-decoration: none;
   color: var(--sl-color-white) !important;
-}
-
-/* Improved Sidebar */
-
-summary:where(.astro-3ii7xxms):hover,
-a:where(.large):hover {
-  border-radius: 0.25rem;
-  background-color: var(--sl-color-gray-3);
 }
 
 /* custom links */
