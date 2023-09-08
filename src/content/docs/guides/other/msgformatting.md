@@ -6,9 +6,9 @@ id: msgformatting
 
 **This page is about hyperlinks, markdown, what they do and how to use them.**
 
-:::tip
+:::info[Markdown]
 
-Discord is rolling out Masked Links & Markdown to Communities slowly, meaning you no longer require embeds or interactions to embed links!
+Discord is rolling out Masked Links & Markdown!
 
 Learn more about the changes on their official [blog](https://support.discord.com/hc/en-us/articles/210298617-Markdown-Text-101-Chat-Formatting-Bold-Italic-Underline-#h_01H53FJBNB9B5RT9M1M9V1EQ7W).
 

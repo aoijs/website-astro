@@ -13,11 +13,11 @@ Storing your commands in your main file may seem fine, but after a certain amoun
 In this step we'll take a look at your main file also known as `index.js`. We add `LoadCommands` in order for
 the bot to understand where our files are.
 
-:::warning
+:::caution
 Ensure you edited the first line of code when you start using the LoadCommands class.
 
-\- `const { AoiClient } = require("aoi.js");`  
-\+ `const { AoiClient, LoadCommands } = require("aoi.js");`  
+Instead of: `const { AoiClient } = require("aoi.js");`  
+Do this instead: `const { AoiClient, LoadCommands } = require("aoi.js");`  
 :::
 
 ```javascript title="index.js"
@@ -122,7 +122,7 @@ $log[Someone joined a server!]`,
 ];
 ```
 
-:::info  
+:::tip  
 All Command Types can be found [here](./1events.md)!  
 :::
 

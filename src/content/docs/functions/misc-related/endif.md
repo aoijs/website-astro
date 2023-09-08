@@ -12,7 +12,7 @@ id: endif
 $endif
 ```
 
-:::warning Deprecation
+:::caution[Deprecation]
 
 `$if: "old"` is deprecated and should no longer be used as it will be removed in the future.
 

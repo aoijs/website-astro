@@ -44,7 +44,7 @@ export default defineConfig({
 				},
         {
 					tag: 'meta',
-					attrs: { property: 'color', content: "#89CFF0" },
+					attrs: { property: 'theme-color', content: "#89CFF0" },
 				},
       ],
       sidebar: [
@@ -52,6 +52,11 @@ export default defineConfig({
           label: "Introduction",
           link: "/guides/setup",
         },
+        {
+          label: 'Extensions',
+          autogenerate: { directory: 'extensions' },
+          collapsed: true
+        },    
         {
           label: "Guides",
           items: [
@@ -180,7 +185,7 @@ export default defineConfig({
               collapsed: true,
             },
           ],
-          collapsed: false,
+          collapsed: true,
         },
       ],
     }),

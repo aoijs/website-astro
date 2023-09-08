@@ -1,4 +1,4 @@
-//handle toc update / keep focus (ignore)
+// handle toc update / keep focus (ignore)
 const key = "toc-position";
 let position = { scrollTop: 0 };
 const sidebar = document.querySelector(
@@ -26,7 +26,8 @@ if (sidebar) {
   });
 }
 
-new MutationObserver((mutations) => {
+// Create a new MutationObserver
+const observer = new MutationObserver((mutations) => {
   for (const mutation of mutations) {
     if (mutation.type === "attributes") {
       const current = mutation.target.getAttribute("aria-current");
@@ -35,10 +36,16 @@ new MutationObserver((mutations) => {
       }
     }
   }
-}).observe(document.querySelector("starlight-toc > nav > ul"), {
-  attributeFilter: ["aria-current"],
-  subtree: true,
 });
+
+// Ensure the element exists before attempting to observe it
+const targetElement = document.querySelector("starlight-toc > nav > ul");
+if (targetElement) {
+  observer.observe(targetElement, {
+    attributeFilter: ["aria-current"],
+    subtree: true,
+  });
+}
 
 // codeblock copy button (ignore)
 let codeBlocks = Array.from(document.querySelectorAll("pre"));
@@ -46,16 +53,27 @@ let codeBlocks = Array.from(document.querySelectorAll("pre"));
 for (let codeBlock of codeBlocks) {
   let wrapper = document.createElement("div");
   wrapper.style.position = "relative";
+
   let copyButton = document.createElement("div");
   copyButton.className = "copy-button";
   copyButton.innerHTML = `Copy`;
+  copyButton.style.display = "none";
 
   copyButton.addEventListener("click", async () => {
     await copyCode(codeBlock, copyButton);
   });
 
+  wrapper.appendChild(codeBlock.cloneNode(true));
+  codeBlock.parentNode.replaceChild(wrapper, codeBlock);
   wrapper.appendChild(copyButton);
-  codeBlock.parentNode.insertBefore(wrapper, codeBlock);
+
+  wrapper.addEventListener("mouseenter", () => {
+    copyButton.style.display = "block";
+  });
+
+  wrapper.addEventListener("mouseleave", () => {
+    copyButton.style.display = "none";
+  });
 }
 
 async function copyCode(block, button) {
@@ -67,5 +85,5 @@ async function copyCode(block, button) {
   setTimeout(() => {
     button.innerHTML = `Copy`;
     button.disabled = false;
-  }, 4000);
+  }, 3000);
 }

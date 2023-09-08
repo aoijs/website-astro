@@ -40,7 +40,7 @@ code {
   border-radius: 7px;
 }
 
-.header:where(.astro-2gh5jeoh) {
+[data-has-hero] header {
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(12px);
   background-color: transparent;
@@ -66,9 +66,9 @@ code {
 
 .copy-button {
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
+  top: -0.9rem;
+  right: 0.5rem;
+  background-color: var(--astro-code-color-background);
   border: #585858 solid 0.1rem;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -80,6 +80,32 @@ code {
 .copy-button:hover {
   border: #c2c2c2 solid 0.11rem;
   transition: all 0.1s ease-in;
+}
+
+.sh-button-container {
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--astro-code-color-background);
+}
+
+.sh-button {
+  padding: 5px 10px;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: #585858 solid 0.1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  user-select: none;
+  transition: all 0.1s ease-in;
+  align-items: center;
+}
+
+.sh-button:hover {
+  border: #c2c2c2 solid 0.11rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
 }
 
 /* Custom Header Link */
