@@ -9,25 +9,26 @@ id: getObjectProperty
 ## Usage
 
 ```php
-$getObjectProperty[name]
+$getObjectProperty[objectName;property]
 ```
 
 ## Parameters
 
-| Field | Type   | Description                  | Required |
-| ----- | ------ | ---------------------------- | :------: |
-| name  | string | Name of the object property. |   true   |
+| Field      | Type   | Description             | Required |
+| ---------- | ------ | ----------------------- | :------: |
+| objectName | string | The object name.        |   true   |
+| property   | string | Name of the properties. |   true   |
 
 ## Example(s)
 
-This will return the object property of "hello" created in `$createObject`:
+This will return the object property of "Leref" created in `$createObject`:
 
 ```javascript
 bot.command({
   name: "getObjectProperty",
   code: `
-    $getObjectProperty[hello]
-    $createObject[{"hello": "bye"}]
+    $getObjectProperty[Object Name;Leref]
+    $createObject[Object Name;{"Leref": "Ferel"}]
     `,
 });
 ```

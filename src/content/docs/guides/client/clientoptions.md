@@ -31,10 +31,6 @@ const bot = new AoiClient({
             dbType: "KeyValue",
         }
     }, // Example refers to @akarui/aoi.db, other databases are not included in this Example.
-    fetchInvites: {
-        cacheInviters : boolean,
-        enabled : boolean,
-    },
     suppressAllErrors? : boolean,
     errorMessage? : string,
     aoiAutoUpdate? : boolean,
@@ -63,9 +59,8 @@ const bot = new AoiClient({
 | `guildOnly`         | boolean | Either give your bot the ability to respond in Direct Message or remove it.             |
 | `cache`             | string  | Client Cache Options.                                                                   |
 | `database`          | string  | Client Database Options.                                                                |
-| `fetchInvites`      | string  | Setup the built-in invite system.                                                       |
 | `suppressAllErrors` | boolean | Suppress all occuring errors.                                                           |
-| `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes.                           |
+| `errorMessage`      | string  | Send a given error message when `suppressAllErrors` executes, supports parser.          |
 | `aoiAutoUpdate`     | boolean | Automatically update aoi.js if a update is available.                                   |
 | `aoiWarning`        | boolean | Disable aoiWarning logs which are sent to your console.                                 |
 | `aoiLogs`           | boolean | Disable aoiLogs which are sent to your console.                                         |

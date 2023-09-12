@@ -1,15 +1,15 @@
 ---
-title: $createObject
-description: $createObject will create a new object.
-id: createObject
+title: $deleteObject
+description: $deleteObject will delete a previously created object.
+id: deleteObject
 ---
 
-`$createObject` will create a new object.
+`$deleteObject` will create a previously created object.
 
 ## Usage
 
 ```php
-$createObject[objectName;object]
+$deleteObject[objectName]
 ```
 
 ## Parameters
@@ -17,14 +17,14 @@ $createObject[objectName;object]
 | Field      | Type   | Description      | Required |
 | ---------- | ------ | ---------------- | :------: |
 | objectName | string | The object name. |   true   |
-| object     | object | JSON object.     |   true   |
 
 ## Example(s)
 
 ```javascript
 bot.command({
-  name: "createObject",
+  name: "deleteObject",
   code: `
+  $deleteObject[Object Name]
   $getObjectProperty[Object Name;Leref]
   $createObject[Object Name;{
     "Leref": "Ferel",

@@ -9,25 +9,26 @@ id: findObjectProperty
 ## Usage
 
 ```php
-$findObjectProperty[property;object]
+$findObjectProperty[objectName;...properties]
 ```
 
 ## Parameters
 
-| Field    | Type   | Description           | Required |
-| -------- | ------ | --------------------- | :------: |
-| property | string | Name of the property. |   true   |
-| object   | object | The object to search. |   true   |
+| Field         | Type   | Description             | Required |
+| ------------- | ------ | ----------------------- | :------: |
+| objectName    | object | The object name.        |   true   |
+| ...properties | string | Name of the properties. |   true   |
 
 ## Example(s)
 
-This will return `{"object": "property"}` as it was able to find "object":
+This will return `{"Leref": "Ferel"}` as it was able to find "object":
 
 ```javascript
 bot.command({
   name: "findObjectProperty",
   code: `
-  $findObjectProperty[object;{"aoijs": "leref", "object": "property"}]
+  $findObjectProperty[Object Name;Leref]
+  $createObject[Object Name;{"Leref": "Ferel", "aoi.js": "dbd.js"}]
   `,
 });
 ```

@@ -27,7 +27,7 @@ bot.command({
   name: "addTimestamp",
   code: `
   $description[Hello!]
-  $addTimestamp
+  $addTimestamp[192839ms]
   `,
 });
 ```

@@ -9,14 +9,15 @@ id: getObject
 ## Usage
 
 ```php
-$getObject[format?]
+$getObject[objectName;format?]
 ```
 
 ## Parameters
 
-| Field   | Type    | Description                                                  | Required |
-| ------- | ------- | ------------------------------------------------------------ | :------: |
-| format? | boolean | Format the output? <br /> 1. **true** (default) 2. **false** |  false   |
+| Field      | Type    | Description                                                  | Required |
+| ---------- | ------- | ------------------------------------------------------------ | :------: |
+| objectName | string  | The object name.                                             |   true   |
+| format?    | boolean | Format the output? <br /> 1. **true** (default) 2. **false** |  false   |
 
 ## Example(s)
 
@@ -27,7 +28,7 @@ bot.command({
   name: "getObject",
   code: `
     $getObject[true]
-    $createObject[{"hello": "bye"}]
+    $createObject[Object Name;{"Leref": "Ferel"}]
     `,
 });
 ```

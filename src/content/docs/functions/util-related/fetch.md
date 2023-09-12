@@ -9,15 +9,16 @@ id: fetch
 ## Usage
 
 ```php
-$fetch[method;query;...query]
+$fetch[method;query;...properties]
 ```
 
 ## Parameters
 
-| Field  | Type   | Description                     | Required |
-| ------ | ------ | ------------------------------- | :------: |
-| method | string | Method to fetch (listed below). |   true   |
-| query  | string | Input for the used method.      |   true   |
+| Field         | Type   | Description                        | Required |
+| ------------- | ------ | ---------------------------------- | :------: |
+| method        | string | Method to fetch (listed below).    |   true   |
+| query         | string | Input for the used method.         |   true   |
+| ...properties | string | Sub properties of query to return. |  false   |
 
 <details>
   <summary><h3> Methods </h3></summary>
@@ -42,14 +43,14 @@ $fetch[method;query;...query]
 
 ## Example(s)
 
-This will display information about the initial command message using the `fetch` function:
+This will display information about the initial command message using the `fetch` function (returns `message.id`):
 
 ```javascript
 bot.command({
   name: "fetch",
   code: `
   \`\`\`
-  $fetch[message;$messageID]
+  $fetch[message;$messageID;id]
   \`\`\`
   `,
 });

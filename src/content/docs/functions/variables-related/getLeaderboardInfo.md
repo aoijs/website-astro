@@ -14,12 +14,12 @@ $getLeaderboardInfo[variable;id;type;option]
 
 ## Parameters
 
-| Field   | Type    | Description                                                                                          | Required |
-| ------- | ------- | ---------------------------------------------------------------------------------------------------- | :------: |
-| varname | string  | Variable name.                                                                                       |   true   |
-| id      | integer | User/guild/channel/message ID.                                                                       |   true   |
-| type    | string  | Variable type <br /> 1. **globalUser** <br /> 2. **user** <br /> 3. **server** <br /> 4. **channel** |   true   |
-| option  | string  | Option to return <br /> 1. **top** (default) <br /> **value**                                        |   true   |
+| Field    | Type    | Description                                                                                                                     | Required |
+| -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------- | :------: |
+| variable | string  | Variable name.                                                                                                                  |   true   |
+| id       | integer | User/guild/channel/message ID.                                                                                                  |   true   |
+| type     | string  | Variable type <br /> 1. **global** <br /> 2. **user** <br /> 3. **guild** (default) <br /> 4. **channel** <br /> 5. **message** |   true   |
+| option   | string  | Option to return <br /> 1. **top** <br /> 2. **value** <br /> 3. **tag** <br /> 4. **username**                                 |   true   |
 
 ## Example(s)
 
@@ -29,7 +29,7 @@ This will return the position of the current guild:
 bot.command({
   name: "getLeaderboardInfo",
   code: `
-    $getLeaderboardInfo[Example;$guildID;server;top]
+    $getLeaderboardInfo[Example;$guildID;guild;top]
     `,
 });
 ```

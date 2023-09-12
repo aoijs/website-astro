@@ -9,14 +9,17 @@ id: guildIcon
 ## Usage
 
 ```php
-$guildIcon[guildID?]
+$guildIcon[guildID?;size?;dynamic?;extension?]
 ```
 
 ## Parameters
 
-| Field    | Type    | Description          | Required |
-| -------- | ------- | -------------------- | :------: |
-| guildID? | integer | The ID of the guild. |  false   |
+| Field      | Type    | Description                               | Required |
+| ---------- | ------- | ----------------------------------------- | :------: |
+| guildID?   | integer | The ID of the guild.                      |  false   |
+| size?      | integer | The size of the image.                    |  false   |
+| dynamic?   | boolean | 1. **true** (default) <br /> 2. **false** |  false   |
+| extension? | string  | Image format.                             |  false   |
 
 ## Example(s)
 
@@ -26,7 +29,7 @@ This will return the icon of the guild:
 bot.command({
   name: "guildIcon",
   code: `
-  $guildIcon[$guildID]
+  $guildIcon[$guildID;4096;true;webp]
   `,
 });
 ```
