@@ -5,8 +5,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import react from "@astrojs/react";
 
 export default defineConfig({
-  site: "https://aoijs.github.io",
-  base: "/website-astro",
+  site: "https://aoi.js.org",
   integrations: [
     starlight({
       title: "aoi.js",
